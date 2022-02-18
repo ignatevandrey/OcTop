@@ -1,0 +1,127 @@
+html {
+    scroll-behavior: smooth;
+    min-width: $html-min-width;
+    max-width: $html-max-width;
+    color: $color-text;
+    background-color: $color-white;
+    font-family: $font-main;
+    font-size: 16px;
+    line-height: 135%;
+    font-weight: 400;
+    text-align: left;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+    border-style: none;
+    transform: translate3d(0px, 0px, .001px);
+}
+a {
+    transition: all .3s ease;
+}
+::placeholder {
+    color: $color-text;
+    opacity: .6;
+}
+input[placeholder] {
+    text-overflow: ellipsis
+}
+input::-moz-placeholder {
+    text-overflow: ellipsis
+}
+input:-moz-placeholder {
+    text-overflow: ellipsis
+}
+input:-ms-input-placeholder {
+    text-overflow: ellipsis
+}
+:focus::-webkit-input-placeholder {
+    color: transparent
+}
+:focus::-moz-placeholder {
+    color: transparent
+}
+:focus:-moz-placeholder {
+    color: transparent
+}
+:focus:-ms-input-placeholder {
+    color: transparent
+}
+::selection {
+    background: $color-text;
+    text-shadow: none;
+}
+.no-wrap {
+    white-space: nowrap;
+}
+.section-text {
+    font-family: $font-main;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 145%;
+    color: $color-text;
+}
+.c-main {
+    color: $color-main1;
+}
+.slider-wr {
+    position: relative;
+}
+.slider-nav {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 98vw;
+    max-width: calc(100% + 140px);
+    padding: 0 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    @include pad {
+        display: flex;
+    }
+}
+.sl-slider .slider-nav {
+    @include pad {
+        top: 7%;
+    }
+    @include desktop {
+        top: 41%;
+    }
+}
+.image {
+    image-rendering: crisp-edges; // safari
+    image-rendering: -moz-crisp-edges; // fire fox
+    image-rendering: -webkit-optimize-contrast; // chrom
+    -ms-interpolation-mode: nearest-neighbor; // IE
+}
+.image.cover {
+    height: 100%;
+    width: 100%;
+}
+.contain {
+    object-fit: contain;
+}
+.cover {
+    object-fit: cover;
+}
+.fill {
+    object-fit: fill;
+}
+.first-title {
+    font-weight: bold;
+    font-size: $text-large-medium;
+    line-height: 135%;
+    letter-spacing: .01em;
+    color: $color-white;
+}
+// ----- END directions
+.link-phone {
+    color: $color-bg3;
+}
+.link-phone:hover {
+    color: $color-main2;
+}
