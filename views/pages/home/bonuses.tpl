@@ -3,7 +3,7 @@
 <section class="bonuses__wrap">
     <div class="container bonuses">
         <div class="bonuses__textWrap">
-            <h2 class="bonuses-title">Оставьте заявку и получите <br>
+            <h2 class="title-2">Оставьте заявку и получите <br>
              бонусы от нашей компании</h2>
             <p class="bonuses-suptitle">1 месяц работы в подарок</p>
             <p class="bonuses-suptitle">Перенос вашей базы в облако <br> 

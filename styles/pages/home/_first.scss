@@ -10,12 +10,8 @@
         padding: 65px 16px 80px;
         }
         .first-title {
-                font-size: $text-large-medium;
-                font-weight: 500;
-                line-height: 125%;
                 margin-top: 32px;
                 @include pad {
-                font-size: $text-huge;
                 line-height: 60px;
             }
             a{
