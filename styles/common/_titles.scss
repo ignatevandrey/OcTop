@@ -1,0 +1,28 @@
+.title {
+    font-weight: 700;
+}
+.title-2 {
+    font-size: $text-large-medium;
+    line-height: 135%;
+    letter-spacing: .01em;
+}
+.title-3 {
+    font-size: $text-medium;
+    line-height: 135%;
+    letter-spacing: .01em;
+    color: $color-text;
+    opacity: .85;
+}
+.title-4 {
+    font-size: $text-small;
+    line-height: 135%;
+    letter-spacing: .01em;
+    color: $color-text;
+    opacity: .85;
+}
+.modal-title {
+    font-size: $text-medium;
+    line-height: 135%;
+    letter-spacing: .01em;
+    margin-bottom: 20px;
+}

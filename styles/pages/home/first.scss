@@ -1,0 +1,95 @@
+.first {
+    overflow: hidden;
+}
+.first-slider {
+    height: 680px;
+    @include pad {
+        height: 700px;
+    }
+    @include desktop-mini {
+        height: 500px;
+    }
+    @include desktop-large {
+        height: 720px;
+    }
+}
+.first-slider .container {
+    position: relative;
+    height: 100%;
+}
+.first__swiper {
+    height: 100%;
+}
+.first-slider .swiper-slide {
+    position: relative;
+    z-index: 0;
+}
+.first-slider .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: 5% 50%;
+    @include pad {
+        object-position: 70% 50%;
+    }
+    @include desktop {
+        object-position: 80% 50%;
+    }
+}
+.first-slider .swiper-slide__wr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 0;
+    @include pad {
+        padding: 0 60px;
+    }
+}
+.first-slider .btn-default {
+    width: 296px;
+    margin-bottom: 90px;
+    @include pad {
+        margin-bottom: 120px;
+    }
+    @include desktop-mini {
+        margin-bottom: 90px;
+    }
+    @include desktop-large {
+        margin-bottom: 150px;
+    }
+}
+.first-slider .slider-nav {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+.first-slider .swiper-pagination-bullets {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.first-title__home {
+    margin-bottom: 60px;
+}
+.first-slider__text {
+    margin-bottom: 105px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: .01em;
+    color: $color-white;
+    @include pad {
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+    @include desktop-mini {
+        margin-bottom: 80px;
+    }
+    @include desktop-large {
+        margin-bottom: 100px;
+    }
+}
+

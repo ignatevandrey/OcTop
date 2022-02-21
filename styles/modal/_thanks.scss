@@ -1,0 +1,70 @@
+.intopModal-thanks .intopModal__whiteContent {
+    width: 386px;
+    @include pad {
+        width: 650px;
+    }
+}
+.intopModal-thanks .modal-header {
+    position: relative;
+    height: 214px;
+    background: $color-main1;
+    overflow: hidden;
+    @include pad {
+        height: 208px;
+    }
+}
+.intopModal-thanks .modal-footer {
+    padding: 34px 20px;
+    text-align: center;
+    @include pad {
+        padding: 41px 145px;
+    }
+}
+.thanks-title {
+    font-size: $text-large-medium;
+    line-height: 135%;
+    letter-spacing: .01em;
+    margin-bottom: 10px;
+}
+.thanks-text {
+    margin: 0 auto;
+    max-width: 264px;
+    @include pad {
+        max-width: 360px;
+    }
+}
+.intopModal-thanks .modal-header img {
+    position: absolute;
+    z-index: 1;
+}
+.thanks-check-img {
+    width: 104px;
+    height: 104px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.thanks-confetti-img {
+    width: 120px;
+    height: 120px;
+    @include pad {
+        width: 205px;
+        height: 205px;
+    }
+}
+.confetti-left {
+    top: 82px;
+    left: 19px;
+    @include pad {
+        top: 72px;
+        left: 50px;
+    }
+}
+.confetti-right {
+    top: 23px;
+    right: 21px;
+    @include pad {
+        top: -22px;
+        right: 53px;
+    }
+}

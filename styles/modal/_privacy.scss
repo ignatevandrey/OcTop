@@ -1,0 +1,56 @@
+.intopModal-privacy .intopModal__whiteContent, .intopModal-alert .intopModal__whiteContent {
+    width: 392px;
+    @include mobile {
+        width: calc(100vw - 20px);
+        max-width: 650px;
+    }
+    @include pad {
+        max-width: none;
+        width: 740px;
+    }
+}
+.intopModal-privacy .modal__inner, .intopModal-alert .modal__inner {
+    display: block;
+    padding: 30px 10px;
+    @include mobile {
+        padding: 30px 20px;
+    }
+    @include pad {
+        padding: 40px 30px;
+    }
+}
+.intopModal-privacy .modal-title {
+    text-align: center;
+}
+.privacy__text {
+    text-indent: 30px;
+    text-align: justify;
+
+    & + & {
+        margin-top: 10px;
+    }
+}
+.privacy__text::first-letter {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-bg3;
+}
+.privacy__list {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.privacy__list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+.privacy__list li::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background: $color-bg3;
+    border-radius: 50%;
+}

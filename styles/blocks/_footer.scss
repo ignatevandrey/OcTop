@@ -1,0 +1,297 @@
+.footer {
+    padding: 60px 0 0 0;
+    @include pad {
+        padding: 80px 0 0 0;
+    }
+}
+.footer-top {
+    padding: 16px 0;
+    border-top: 1px solid $color-bg2;
+    border-bottom: 1px solid $color-bg2;
+}
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include pad {
+        justify-content: space-around;
+    }
+    @include desktop-mini {
+        flex-wrap: nowrap;
+    }
+}
+.footer__phone {
+    display: none;
+    @include pad {
+        display: flex;
+        order: 2;
+        align-items: center;
+        margin-left: 3.5%;
+        margin-right: 15px;
+        font-size: $text-medium-mini;
+        font-weight: 600;
+        cursor: pointer;
+        letter-spacing: .01em;
+        transition: all .3s ease;
+    }
+    @include desktop-mini {
+        order: 3;
+    }
+}
+.footer__phone svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    fill: $color-text;
+    transition: all .3s ease;
+}
+.footer__phone:hover svg {
+    fill: $color-bg3;
+}
+.footer__phone:hover {
+    color: $color-bg3;
+}
+.footer__menu {
+    flex: auto;
+    order: 3;
+    width: 100%;
+    margin-top: 30px;
+    @include desktop-mini {
+        order: 2;
+        width: auto;
+        margin-top: 0;
+    }
+}
+.footer__menu .menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    @include pad {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.footer__menu .menu__item + .menu__item {
+    margin-left: 0;
+    margin-top: 25px;
+    @include pad {
+        margin-left: 25px;
+        margin-top: 0;
+    }
+}
+.footer__menu .menu__item-link {
+    display: block;
+    text-transform: uppercase;
+    pointer-events: initial;
+    transition: all .3s ease;
+    @include pad {
+        flex-direction: row;
+        text-transform: uppercase;
+    }
+}
+.footer__menu .menu__item:hover .menu__item-link {
+    color: $color-main1;
+}
+.footer-logo {
+    display: inline-block;
+    order: 1;
+}
+.footer-logo .logo__img {
+    height: 39px;
+    width: 102px;
+    @include desktop {
+        height: 43px;
+        width: 115px;
+    }
+}
+.footer-top .btn {
+    order: 2;
+    @include desktop-mini {
+        order: 4;
+    }
+}
+.footer-bottom {
+    padding: 31px 0;
+    border-top: 1px solid $color-bg2;
+    border-bottom: 1px solid $color-bg2;
+}
+.footer-bottom__wr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include pad {
+        justify-content: center;
+    }
+    @include desktop-mini {
+        justify-content: space-between;
+    }
+}
+.footer-bottom__txt {
+    font-size: $text-tiny;
+    line-height: 125%;
+    opacity: .6;
+}
+.footer-bottom__txt:nth-child(2) {
+    display: none;
+    @include desktop-mini {
+        display: block;
+    }
+}
+.footer-bottom__txt-icon {
+    position: relative;
+    padding-left: 24px;
+}
+.footer-bottom__txt-icon::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 17px;
+    background: url(/img/svg/icon-place.svg) 50%/cover no-repeat;
+}
+.footer-center {
+    padding: 20px 0 26px;
+    @include pad {
+        padding: 46px 0 26px;
+    }
+}
+.footer-center .submenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    @include pad {
+        flex-direction: row;
+    }
+}
+.footer-center .submenu__block {
+    width: 100%;
+    @include pad {
+        width: 50%;
+    }
+    @include desktop-mini {
+        width: calc(100% / 3);
+    }
+}
+.footer-center .submenu__block:nth-child(1),
+.footer-center .submenu__block:nth-child(2) {
+    padding: 20px 0;
+    border-bottom: 1px solid $color-bg2;
+    @include pad {
+        border-bottom: none;
+        padding: 0;
+    }
+    @include desktop-mini {
+        padding: 0 10px 0 0;
+    }
+}
+.footer-center .submenu__block:nth-child(3) {
+    @include desktop-mini {
+        padding-left: 100px;
+    }
+}
+.footer-center .submenu__block-title {
+    margin-bottom: 20px;
+    font-size: $text-medium-mini;
+    line-height: 120%;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    opacity: .6;
+}
+.footer-center .submenu__item {
+    font-size: $text-small;
+    margin-bottom: 17px;
+    overflow: hidden;
+    text-transform: none;
+    @include desktop-mini {
+        text-transform: inherit;
+    }
+}
+.footer-center .submenu__item a {
+    position: relative;
+    margin-left: -35px;
+    padding-left: 35px;
+    transition: all .3s ease;
+}
+.footer-center .submenu__item a::before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    top: 15px;
+    left: 0;
+    width: 25px;
+    height: 1px;
+    border-top: 1px solid $color-main2;
+}
+.footer-center .submenu__item:hover a,
+.footer-center .submenu__item.active a {
+    margin: 0;
+}
+.footer-center .submenu__item-promo {
+    position: relative;
+}
+.footer-center .submenu__item-promo .soc-block {
+    padding-top: 25px;
+    @include desktop-mini {
+        padding-top: 0;
+        position: absolute;
+        bottom: 12px;
+        right: 0;
+    }
+}
+.footer-center .submenu__block:nth-child(3) {
+    width: 100%;
+    @include pad {
+        width: 100%;
+    }
+    @include desktop-mini {
+        width: calc(100% / 3);
+    }
+}
+.soc-block__list {
+    display: flex;
+    align-items: center;
+    @include pad {
+        justify-content: center;
+    }
+    @include desktop-mini {
+        justify-content: flex-start;
+    }
+}
+.soc-block__item + .soc-block__item {
+    margin-left: 30px;
+}
+.soc-block__link {
+    display: block;
+}
+.soc-block__img {
+    fill: $color-text;
+    transition: all .3s ease;
+}
+.soc-block__link:hover .soc-block__img {
+    fill: $color-main1;
+}
+.header__menu .soc-block {
+    display: block;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $color-bg2;
+    @include desktop-mini {
+        display: none
+    }
+}
+.header__menu .soc-block__list {
+    justify-content: flex-start;
+}
+.header__mob-btn {
+    display: block;
+    @include desktop-mini {
+        display: none
+    }
+}
+.header__mob-btn .btn {
+    width: 100%;
+}
