@@ -1,3 +1,5 @@
+
+
 <section class="bonuses__wrap">
     <div class="container bonuses">
         <div class="bonuses__textWrap">
@@ -23,11 +25,18 @@
                     <input class="request__checkbox request__checkbox-privacy" type="checkbox" checked>
                     <span class="request__agreement">Даю <span class="request__link request__link-privacy" data-modal="privacy">согласие на обработку персональных данных</span></span>
                     </label>
-                    <button class="request__submit btn btn-default btn-main2-main2" type="button">
+                    <button class="btn btn-default" type="button">
                         <span class="btn__text">оставить заявку</span>
                     </button>
                 </form>
             </div>
         </div>
     </div>
+    <picture class="hand">
+        <source srcset="/img/images/hand.webp" type="image/webp" />
+        <img class="image cover"
+            src="/img/images/hand.png"
+            alt=""
+            decoding="async"/>
+    </picture>
 </section>

@@ -4,10 +4,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 0 60px;
+    padding: 65px 16px 60px;
     @include pad {
         flex-direction: row;
-        padding: 0 0 80px;
+        padding: 65px 16px 80px;
         }
         .first-title {
                 font-size: $text-large-medium;

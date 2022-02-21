@@ -1,4 +1,5 @@
 .bonuses__wrap {
+    position: relative;
     background-color: $color-main1;
     .bonuses {
         display: flex;
@@ -47,4 +48,22 @@
             }
         }
     }
+}
+
+.hand {
+    display: none;
+    @include pad {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+    }
+}
+
+.hand {
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-65%);
 }
