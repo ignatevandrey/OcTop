@@ -70,12 +70,6 @@
     min-width: 100px;
     min-height: 80px;
 }
-.bg-green {
-    background: #EFEDEE;
-}
-.bg-white {
-    background: #ffffff;
-}
 .intopModal__close {
     display: flex;
     align-items: center;
@@ -139,7 +133,7 @@
 .request__fields {
     display: grid;
     grid-gap: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 .request__input {
     width: 100%;
@@ -181,26 +175,25 @@
     content: '';
     top: 0;
     left: 0;
-    width: 16px;
-    height: 16px;
-    border: 2px solid $color-main2;
-    background: transparent;
+    width: 20px;
+    height: 20px;
+    background: $color-main2;
 }
 .request__agreement::after {
     position: absolute;
     top: 5px;
-    left: 5px;
-    width: 7px;
-    height: 4px;
+    left: 4px;
+    width: 13px;
+    height: 7px;
     content: '';
     transition: all .2s ease;
     transform: rotate(-45deg);
-    opacity: 0;
-    border-bottom: 2px solid $color-main2;
-    border-left: 2px solid $color-main2;
-}
-.request__checkbox:checked + .request__agreement::after {
     opacity: 1;
+    border-bottom: 2px solid $color-white;
+    border-left: 2px solid $color-white;
+}
+.request__checkbox:checked + .request__agreement::before {
+    background: $color-bg6;
 }
 .modal__inner {
     display: flex;

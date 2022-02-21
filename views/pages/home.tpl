@@ -2,6 +2,6 @@
 
 {block main}
     {include "./home/first.tpl"}
-    {include "./home/objects.tpl"}
+    {include "./home/bonuses.tpl"}
 {/block}
 

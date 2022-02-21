@@ -111,17 +111,17 @@ input:-ms-input-placeholder {
 .fill {
     object-fit: fill;
 }
-.first-title {
-    font-weight: bold;
-    font-size: $text-large-medium;
-    line-height: 135%;
-    letter-spacing: .01em;
-    color: $color-white;
-}
 // ----- END directions
 .link-phone {
     color: $color-bg3;
 }
 .link-phone:hover {
     color: $color-main2;
+}
+// -----------------------------
+.text {
+    font-size: $text-small;
+    @include pad {
+        font-size: $text-medium-mini;
+    }
 }

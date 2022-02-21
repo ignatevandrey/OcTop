@@ -4,166 +4,31 @@
     justify-content: center;
     cursor: pointer;
     transition: all .3s ease;
+    border-radius: 10px;
 }
+
 .btn-default {
-    padding: 13px 20px;
-    background: transparent;
-    border: 1px solid transparent;
+    padding: 13px 0px;
+    background: $btn-color;
+    width: 100%;
+    max-width: 420px;
+    color: $color-white;
+}
+.btn-default-smoll {
+    max-width: 330px;
+}
+.btn-default:hover {
+    background-color: $btn-hover;
+}
+.btn-default:active {
+    background-color: $btn-ative;
 }
 .btn__text {
-    font-size: 17px;
-    line-height: 120%;
+    font-size: $text-medium-small;
+    line-height: 130%;
     letter-spacing: .01em;
-    text-transform: uppercase;
-    color: $color-text;
-    transition: all .3s ease;
-}
-.btn__arrow {
-    position: relative;
-    width: 0;
-    height: 16px;
-    overflow: hidden;
-    transition: all .3s ease;
-}
-.btn__arrow-left::after {
-    left: 1px;
-}
-.btn__arrow-right::after {
-    right: 1px;
-}
-.btn__arrow::after {
-    position: absolute;
-    content: '';
-    top: 40%;
-    width: 8px;
-    height: 8px;
-    transform: rotate(-45deg) translateY(-50%);
-    border-bottom: 1px solid $color-text;
-    border-right: 1px solid $color-text;
-    transition: all .3s ease;
-}
-.btn:hover .btn__arrow {
-    width: 26px;
-}
-.btn__arrow-long {
-    position: relative;
-    padding-left: 35px;
-}
-.btn__arrow-long::after {
-    position: absolute;
-    content: '';
-    top: 40%;
-    left: 0;
-    width: 20px;
-    height: 16px;
-    transform: translateY(-50%);
-    background: url(/img/svg/arrow-long-right.svg) 50%/cover no-repeat;
-}
-// -----  btn-transparent-main2 прозрачный-оранж
-.btn-transparent-main2.btn-default {
-    background: transparent;
-    border-color: $color-main2;
-}
-.btn-transparent-main2.btn-default:hover {
-    background: $color-main2;
-    box-shadow: 0 20px 25px -6px rgba(246, 145, 76, .25);
-}
-// -----  btn-main2-main2 оранж-оранж
-.btn-main2-main2.btn-default {
-    background: $color-main2;
-    border-color: $color-main2;
-}
-.btn-main2-main2.btn-default:hover {
-    background: $color-main2;
-    box-shadow: 0 20px 25px -6px rgba(246, 145, 76, .25);
-}
-// -----  btn-transparent-main1 прозрачный-зеленый
-.btn-transparent-main1.btn-default {
-    background: transparent;
-    border-color: $color-main1;
-}
-.btn-transparent-main1 .btn__text {
-    color: $color-main1;
-}
-.btn-transparent-main1.btn-default:hover {
-    background: $color-main1;
-    box-shadow: 0 20px 25px -6px rgba(23, 114, 44, .25);
-}
-.btn-transparent-main1:hover .btn__text {
+    text-transform: none;
     color: $color-white;
-}
-// -----  btn-main1-main1 зеленый-зеленый
-.btn-main1-main1.btn-default {
-    background: $color-main1;
-    border-color: $color-main1;
-}
-.btn-main1-main1.btn-default:hover {
-    box-shadow: 0 20px 25px -6px rgba(23, 114, 44, .25);
-}
-.btn-main1-main1 .btn__arrow::after {
-    border-color: $color-white;
-}
-.btn-main1-main1 .btn__text {
-    color: $color-white;
-}
-// -----  slider-btn__circle белый
-.slider-btn__circle-white {
-    position: relative;
-    width: 36px;
-    height: 36px;
-    background: $color-white;
-    border-radius: 50%;
-    filter: drop-shadow(0px 0 25px rgba(0, 0, 0, .35));
-    pointer-events: auto;
-    cursor: pointer;
     transition: all .3s ease;
 }
-.slider-btn__circle-white::before {
-    position: absolute;
-    content: '';
-    width: 16px;
-    border-top: 2px solid $color-text;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all .3s ease;
-}
-.slider-btn__circle-white::after {
-    position: absolute;
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-top: 2px solid $color-text;
-    border-right: 2px solid $color-text;
-    top: 13px;
-    right: 11px;
-    transform: rotate(45deg);
-    transition: all .3s ease;
-}
-.slider-btn__circle-white:hover {
-    filter: drop-shadow(0px 0 25px rgba(0, 0, 0, .65));
-}
-.slider-btn__circle-white:hover.slider-btn__circle-white::before,
-.slider-btn__circle-white:hover.slider-btn__circle-white::after {
-    border-color: $color-bg3;
-}
-.slider-btn__prev.slider-btn__circle-white {
-    transform: rotate(180deg);
-}
-.slider-wr .swiper-pagination-bullets .swiper-pagination-bullet {
-    height: 1px;
-    width: 35px;
-    margin: 0 5px;
-    border-radius: 0;
-    background: $color-text;
-    cursor: pointer;
-    opacity: .4;
-    transition: all .3s ease;
-}
-.slider-wr .swiper-pagination-bullet:hover {
-    background: $color-main2;
-}
-.slider-wr .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: $color-main2;
-    opacity: 1;
-}
+

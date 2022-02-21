@@ -2,7 +2,7 @@
 @import './setup/variables';
 
 @import './setup/reset';
-@import './lib/swiper-bundle';
+// @import './lib/swiper-bundle';
 @import './setup/helpers';
 
 @import './common/containers';
@@ -14,6 +14,8 @@
 
 @import './blocks/header';
 @import './blocks/footer';
+@import './blocks/first';
+@import './blocks/bonuses';
 
 @import './modal/privacy';
 @import './modal/request';
