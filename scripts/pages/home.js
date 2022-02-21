@@ -1,7 +1,15 @@
 import { scrollToBlock } from "../common/helpers";
 
 $(document).ready(function () {
-
+    // бургер
+    $('.header__menuBurger').on('click', () => {
+        $('.header__content').addClass('animate');
+        $('body').css('overflow', 'hidden');
+    })
+    $('.header__menuClose').on('click', () => {
+        $('.header__content').removeClass('animate');
+        $('body').css('overflow', 'visible');
+    })
     // инициализация слайдера First
     if ($(".first__swiper").length > 0) {
         new Swiper(".first__swiper", {

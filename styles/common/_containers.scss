@@ -1,7 +1,5 @@
 .container {
     padding: 0 $html-mobile-edge-offset;
-    @include desktop {
-        width: $container;
-        margin: 0 auto;
-    }
+    max-width: $container;
+    margin: 0 auto;
 }

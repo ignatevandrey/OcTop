@@ -11,7 +11,7 @@ $html-max-width: 1920px;
 $html-mobile-edge-offset: 16px;
 
 /* Containers */
-$container: 1232px;
+$container: 1112px;
 
 /* Colors */
 $black: #000000;
@@ -19,6 +19,8 @@ $color-white: #ffffff;
 $color-text: #000000;
 $color-main1: #D8EDF6;
 $color-main2:#00A0DC;
+
+$link-hov: #057FAD;
 
 $btn-color: #00A0DC;
 $btn-hover: #027CA9;
@@ -36,7 +38,7 @@ $text-helper: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica 
   'Noto Color Emoji';
 $family-main: Arial, $text-helper;
 
-$font-main: 'Jost', sans-serif;
+$font-main: normal, 'Gilroy';
 
 /* Font Size */
 $text-tiny: 14px;

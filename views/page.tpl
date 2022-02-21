@@ -19,30 +19,27 @@
 
     <style>
         @font-face {
-            font-family: "Jost";
+            font-family: 'Gilroy';
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+            src: url(fonts/Gilroy-Medium.woff2) format("woff2");
+        }
+
+        @font-face {
+            font-family: 'Gilroy';
             font-weight: 400;
             font-style: normal;
             font-display: swap;
-            src: url("/fonts/Jost-Regular.woff2") format("woff2"),
-            url("/fonts/Jost-Regular.woff") format("woff");
+            src: url(fonts/Gilroy-Regular.woff2) format("woff2");
         }
 
         @font-face {
-            font-family: "Jost";
-            font-weight: 600;
+            font-family: 'Roboto';
+            font-weight: 400;
             font-style: normal;
             font-display: swap;
-            src: url("/fonts/Jost-SemiBold.woff2") format("woff2"),
-            url("/fonts/Jost-SemiBold.woff") format("woff");
-        }
-
-        @font-face {
-            font-family: "Jost";
-            font-weight: 700;
-            font-style: normal;
-            font-display: swap;
-            src: url("/fonts/Jost-Bold.woff2") format("woff2"),
-            url("/fonts/Jost-Bold.woff") format("woff");
+            src: url(fonts/Roboto-Regular.woff2) format("woff2");
         }
     </style>
 
