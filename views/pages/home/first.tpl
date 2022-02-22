@@ -1,6 +1,6 @@
 <section class="container first">
     <div class="first__item">
-        <h1 class="first-title">Аренда 1С в облаке<br>
+        <h1 class="title first-title">Аренда 1С в облаке<br>
             за <a href="/">950 рублей!</a>
         </h1>
         <h2 class="first-suptitle">Быстрая и экономная альтернатива <br>
