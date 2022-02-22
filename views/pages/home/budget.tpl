@@ -13,6 +13,60 @@
                         </p>
                     </div>
                 </div>
+                <div class="budget__list">
+                    <img class="budget__icon" src="img/svg/plus.svg">
+                    <div>
+                        <p class="text-small">kjklkm</p>
+                        <p class="budget-text">Работа с любого устройства (компьютера, 
+                            телефона) и в любом месте
+                        </p>
+                    </div>
+                </div>
+                <div class="budget__list">
+                    <img class="budget__icon" src="img/svg/plus.svg">
+                    <div>
+                        <p class="text-small">kjklkm</p>
+                        <p class="budget-text">Работа с любого устройства (компьютера, 
+                            телефона) и в любом месте
+                        </p>
+                    </div>
+                </div>
+                <div class="budget__list">
+                    <img class="budget__icon" src="img/svg/plus.svg">
+                    <div>
+                        <p class="text-small">kjklkm</p>
+                        <p class="budget-text">Работа с любого устройства (компьютера, 
+                            телефона) и в любом месте
+                        </p>
+                    </div>
+                </div>
+                <div class="budget__list">
+                    <img class="budget__icon" src="img/svg/plus.svg">
+                    <div>
+                        <p class="text-small">kjklkm</p>
+                        <p class="budget-text">Работа с любого устройства (компьютера, 
+                            телефона) и в любом месте
+                        </p>
+                    </div>
+                </div>
+                <div class="budget__list">
+                    <img class="budget__icon" src="img/svg/plus.svg">
+                    <div>
+                        <p class="text-small">kjklkm</p>
+                        <p class="budget-text">Работа с любого устройства (компьютера, 
+                            телефона) и в любом месте
+                        </p>
+                    </div>
+                </div>
+                <div class="budget__list">
+                    <img class="budget__icon" src="img/svg/plus.svg">
+                    <div>
+                        <p class="text-small">kjklkm</p>
+                        <p class="budget-text">Работа с любого устройства (компьютера, 
+                            телефона) и в любом месте
+                        </p>
+                    </div>
+                </div>
                     <picture class="">
                         <source srcset="/img/images/budget_blue-mob.webp" media="(max-width: 767px)" type="image/webp" />
                         <source srcset="/img/images/budget_blue-mob.png" media="(max-width: 767px)" />
