@@ -1,0 +1,73 @@
+.budget {
+    background-color: $bg-grey;
+    padding: 16px;
+    @include pad {
+        padding: 46px 0;
+    }
+}
+
+.budget-text {
+    font-size: $text-medium-mini;
+
+}
+
+.title__budget {
+    margin-bottom: 30px;
+}
+
+.sup-title__budget {
+    text-align: center;
+    @include pad {
+        text-align: left;
+    }
+}
+
+.budget__itemWrap {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 392px;
+    @include pad {
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 100%;
+    }
+}
+
+.budget__item {
+    position: relative;
+    max-width: 392px;
+    border-radius: 20px;
+    padding: 20px 0 20px;
+    @include pad {
+        padding: 20px 40px 38px 20px;
+        max-width: 495px;
+    }
+}
+
+.budget__item-blue {
+    background-color: $color-main1;
+}
+.budget__item-white {
+    background-color: $color-white;
+}
+
+.budget__list {
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+
+.budget__icon {
+    margin-right: 10px;
+}
+
+.budget__img {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    @include pad {
+        bottom: 0px;
+        right: 0px;
+    }
+}

@@ -1,0 +1,7 @@
+.prodrams__wrap {
+    padding: 30px 0 18px;
+    background-color: $color-main1;
+    @include pad {
+        padding: 30px 0 75px;
+    }
+}
