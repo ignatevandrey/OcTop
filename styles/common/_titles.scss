@@ -9,10 +9,12 @@
 }
 .title-2 {
     font-size: $text-medium-small;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 125%;
+    margin: 15px 0 20px;
     @include pad {
-        font-size: $text-large-medium;
+        font-size: $text-medium-maxi;
+        margin: 20px 0 44px;
     }
 }
 .sup-title {
@@ -25,3 +27,11 @@
         font-size: $text-medium-mini;
     }
 }
+
+.text-small {
+    font-size: $text-tiny;
+    color: $color-main2;
+    margin-bottom: 4px;
+}
+
+
