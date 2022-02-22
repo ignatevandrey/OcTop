@@ -1,5 +1,10 @@
 .title {
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 118%;
+    @include pad{
+        font-size: 48px;
+    }
 }
 .title-2 {
     font-size: $text-large-medium;
