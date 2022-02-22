@@ -9,7 +9,7 @@
     color: $color-white;
     font-size: $text-small;
     @include pad{
-        background: $color-main1;
+        background: $color-main2;
         color: $color-white;
         font-size: $text-tiny;
     }
@@ -38,9 +38,9 @@
     z-index: 25;
 
     transition: all 0.5s ease-out;
-    background: $color-main1;
+    background: $color-main2;
     width: 200px;
-    padding: 43px 0 24px;
+    padding: 33px 0 24px;
     border-radius: 5px;
     @include pad{
         display: contents;
@@ -52,7 +52,7 @@
 .header__contact{
     text-align: center;
     font-weight: 500;
-    padding-bottom: 9px;
+    padding: 10px 0;
     svg{
         vertical-align: top;
         fill: $color-white;
