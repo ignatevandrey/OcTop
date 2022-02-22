@@ -14,6 +14,9 @@
     <meta property="og:image" content="{$meta->image}">
 
     <link rel="canonical" href="{$meta->url}">
+    
+    <!-- Подключаю ЯндексКарты -->
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 
     {include "views/favicons.tpl"}
 
