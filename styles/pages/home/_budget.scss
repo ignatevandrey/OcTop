@@ -38,7 +38,8 @@
     position: relative;
     max-width: 392px;
     border-radius: 20px;
-    padding: 20px 0 20px;
+    padding: 20px 10px 20px;
+    z-index: 0;
     @include pad {
         padding: 20px 40px 38px 20px;
         max-width: 495px;
@@ -54,20 +55,42 @@
 
 .budget__list {
     display: flex;
+    align-items: center;
     margin-top: 20px;
     position: relative;
 }
 
+.budget__list-hidden{
+    display: none;
+    @include pad{
+        display: flex;
+    }
+}
+
+.budget__list-accordion{
+    flex-direction: column;
+    @include pad{
+        display: none;
+    }
+}
+
 .budget__icon {
     margin-right: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 .budget__img {
     position: absolute;
     bottom: 0px;
     right: 0;
+    z-index: -1;
     @include pad {
         bottom: 0px;
         right: 0px;
     }
+}
+
+.accordion__link{
+    margin-bottom: 5px;
 }

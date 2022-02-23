@@ -1,7 +1,7 @@
 import { scrollToBlock } from "../common/helpers";
 
 $(document).ready(function () {
-    // бургер
+    // Бургер
     $('.header__menuBurger').on('click', () => {
         $('.header__content').addClass('animate');
         $('body').css('overflow', 'hidden');
@@ -29,43 +29,46 @@ $(document).ready(function () {
         });
         myMap.geoObjects.add(myPlacemark);
     });
-    // инициализация слайдера First
-    if ($(".first__swiper").length > 0) {
-        new Swiper(".first__swiper", {
-            roundLengths: true,
-            watchOverflow: true,
-            loop: true,
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            speed: 800,
-            spaceBetween: 0,
-            pagination: {
-                el: ".first-slider .slider-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".first-slider .slider-btn__next",
-                prevEl: ".first-slider .slider-btn__prev",
-            },
-        });
-    }
-
+    // Аккордион
+    $('.budget__list-accordion img').css('transform','rotate('+360+'deg)');
+    $.fn.accordion = function(itemClass, picClass) {
+        let some = itemClass + ' ';
+        let itemBlock = some + '.budget__list-hidden';
+        $(itemBlock).toggleClass('active');
+        $(itemBlock + '.active').slideToggle().css('display','flex');
+        if ($(itemBlock).hasClass('active')) {
+            $(some + '.accordion__link-open').html("Скрыть");
+            $(some + '.budget__list-accordion img').css('transform','rotate('+180+'deg)');
+        } else {
+            $(some + '.accordion__link-open').html("Смотреть все");
+            $(some + '.budget__list-accordion img').css('transform','rotate('+0+'deg)');
+            $(itemBlock).slideUp();
+        }
+        $(some + picClass).before($(some + '.budget__list-accordion'));
+    };
+    $('.budget__item-white .budget__list-accordion').on('click', (e) => {
+        e.preventDefault();
+        $.fn.accordion('.budget__item-white','.budget__image-white');
+    });
+    $('.budget__item-blue .budget__list-accordion').on('click', (e) => {
+        e.preventDefault();
+        $.fn.accordion('.budget__item-blue','.budget__image-blue');
+    });
     /* ----------- Переключение табов в блоке НАШИ ОБЪЕКТЫ (objects) ----------*/
+    // $(".objects__tab-nav-item-1").on("click", () => {
+    //     if (!$(".objects__block").hasClass("active-tab-1")) {
+    //         $(".objects__block").removeClass("active-tab-2");
+    //         $(".objects__block").addClass("active-tab-1");
 
-    $(".objects__tab-nav-item-1").on("click", () => {
-        if (!$(".objects__block").hasClass("active-tab-1")) {
-            $(".objects__block").removeClass("active-tab-2");
-            $(".objects__block").addClass("active-tab-1");
+    //         $(".search-reset").data("type", "prodazha");
+    //     }
+    // });
+    // $(".objects__tab-nav-item-2").on("click", () => {
+    //     if (!$(".objects__block").hasClass("active-tab-2")) {
+    //         $(".objects__block").removeClass("active-tab-1");
+    //         $(".objects__block").addClass("active-tab-2");
 
-            $(".search-reset").data("type", "prodazha");
-        }
-    });
-    $(".objects__tab-nav-item-2").on("click", () => {
-        if (!$(".objects__block").hasClass("active-tab-2")) {
-            $(".objects__block").removeClass("active-tab-1");
-            $(".objects__block").addClass("active-tab-2");
-
-            $(".search-reset").data("type", "arenda");
-        }
-    });
+    //         $(".search-reset").data("type", "arenda");
+    //     }
+    // });
 });
