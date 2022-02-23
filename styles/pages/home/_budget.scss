@@ -28,9 +28,10 @@
     flex-direction: column;
     max-width: 392px;
     @include pad {
-    justify-content: space-between;
-    flex-direction: row;
-    max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        max-width: 100%;
     }
 }
 
@@ -93,4 +94,13 @@
 
 .accordion__link{
     margin-bottom: 5px;
+}
+
+.btn__budget {
+    margin: 20px 0 30px;
+    max-width: 419px;
+    @include pad {
+        order: 1;
+        margin-bottom: 0;
+    }
 }
