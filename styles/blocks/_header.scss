@@ -1,10 +1,12 @@
 .header{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 100%;
     z-index: 20;
+    transform: translateX(-50%);
 
+    max-width: 1920px;
     background-color: $color-white;
     color: $color-white;
     font-size: $text-small;
