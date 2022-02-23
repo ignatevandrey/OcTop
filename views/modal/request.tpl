@@ -26,7 +26,7 @@
                 </button>
             </form>
         </div>
-        <div class="mod-request__img">
+        <!-- <div class="mod-request__img">
             <picture>
                 <source srcset="/img/modal/request.webp" type="image/webp" />
                 <img class="image cover"
@@ -37,6 +37,6 @@
                     loading="lazy"
                     decoding="async" />
             </picture>
-        </div>
+        </div> -->
     </div>
 {/block}

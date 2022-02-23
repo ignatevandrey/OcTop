@@ -1,5 +1,3 @@
-
-
 <section class="bonuses__wrap">
     <div class="container bonuses">
         <div class="bonuses__textWrap">
@@ -25,8 +23,8 @@
                     <input class="request__checkbox request__checkbox-privacy" type="checkbox" checked>
                     <span class="request__agreement">Даю <span class="request__link request__link-privacy" data-modal="privacy">согласие на обработку персональных данных</span></span>
                     </label>
-                    <button class="btn btn-default" type="button">
-                        <span class="btn__text">оставить заявку</span>
+                    <button id="bonus" class="btn btn-default" type="button">
+                        <span class="btn__text">Получить бонусы</span>
                     </button>
                 </form>
             </div>

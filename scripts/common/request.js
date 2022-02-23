@@ -59,6 +59,19 @@ $(document).ready(function () {
         }
     });
 
+
+
+    //Модалки
+    $('#bonus').click(function(){
+        // $(".intopModal-request").arcticmodal(arcticmodal_settings);
+        $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
+        // $(".intopModal-privacy").arcticmodal(arcticmodal_settings);
+        // $(".intopModal-alert").arcticmodal(arcticmodal_settings);
+        // $(".intopModal-modal").arcticmodal(arcticmodal_settings);
+    });
+
+
+
     $(".request__link-privacy").click(function (event) {
         event.preventDefault();
     });
