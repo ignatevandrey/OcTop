@@ -35,8 +35,7 @@
                     <img class="budget__icon" src="img/svg/plus.svg">
                     <div>
                         <p class="text-small">kjklkm</p>
-                        <p class="budget-text">Работа с любого устройства (компьютера, 
-                            телефона) и в любом месте
+                        <p class="budget-text">Работа с любого
                         </p>
                     </div>
                 </div>
@@ -44,8 +43,7 @@
                     <img class="budget__icon" src="img/svg/plus.svg">
                     <div>
                         <p class="text-small">kjklkm</p>
-                        <p class="budget-text">Работа с любого устройства (компьютера, 
-                            телефона) и в любом месте
+                        <p class="budget-text">Работа с любого
                         </p>
                     </div>
                 </div>
@@ -53,8 +51,7 @@
                     <img class="budget__icon" src="img/svg/plus.svg">
                     <div>
                         <p class="text-small">kjklkm</p>
-                        <p class="budget-text">Работа с любого устройства (компьютера, 
-                            телефона) и в любом месте
+                        <p class="budget-text">Работа с любого
                         </p>
                     </div>
                 </div>
@@ -62,8 +59,7 @@
                     <img class="budget__icon" src="img/svg/plus.svg">
                     <div>
                         <p class="text-small">kjklkm</p>
-                        <p class="budget-text">Работа с любого устройства (компьютера, 
-                            телефона) и в любом месте
+                        <p class="budget-text">Работа с любого
                         </p>
                     </div>
                 </div>
