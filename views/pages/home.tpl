@@ -6,5 +6,8 @@
     {include "./home/benefits.tpl"}
     {include "./home/budget.tpl"}
     {include "./home/programs.tpl"}
+    {include "./home/started.tpl"}
+    {include "./home/security.tpl"}
+    {include "./home/comfort.tpl"}
 {/block}
 

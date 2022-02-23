@@ -22,9 +22,9 @@
     font-weight: 500;
 }
 .text {
-    font-size: $text-small;
+    font-size: $text-medium-mini;
     @include pad {
-        font-size: $text-medium-mini;
+        font-size: $text-small;
     }
 }
 

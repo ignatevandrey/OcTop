@@ -1,0 +1,44 @@
+.security__wrap {
+    background-color: $color-main1;
+    padding: 40px 0 50px;
+    .container {
+        .security {
+            display: flex;
+            flex-direction: column;
+            @include pad {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .security__item {
+                background-color: $color-white;
+                border-radius: 20px;
+                text-align: center;
+                margin-top: 30px;
+                padding: 24px;
+                @include pad {
+                    margin-top: 0;
+                    width: 30%;
+                    padding: 48px 40px;
+                }
+                img {
+                    width: 85px;
+                    height: 85px;
+                }
+
+            }
+        }
+    }
+}
+
+.title__security {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+.suptitle__security {
+    font-size: 18px;
+    line-height: 140%;
+    display: inline-block;
+}
