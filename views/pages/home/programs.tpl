@@ -6,60 +6,60 @@
     <div class="container programs">
         <div class="programs__item">
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Управление нашей фирмой</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:ЗУП</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Розница</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Такси и аренда автомобилей</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Общепит</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Управление торговлей</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Документооборот </p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Бухгалтерия государственного учреждения</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Бухгалтерия</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Учет в управляющих компаниях ЖКХ, ТСЖ</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Бухгалтерия некоммерческой организации (НКО)</p>
             </div>    
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Зарплата и управление персоналом</p>
             </div>    
         </div>
         <div class="programs__item-2">
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Бухгалтерия строительной организации</p>
             </div>
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Комплексная автоматизация</p>
             </div>
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>1С:Зарплата и кадры государственного учреждения</p>
             </div>
             <div class="programs__card">
-                <p>Сервис доступен 24/7 из любой точки мира</p>
+                <p>И много других!</p>
             </div>
         </div>
         <img class="programs_logo" src="img/images/programs-logo.png">
-        <picture class="programs__imgMan">
-            <source srcset="/img/images/man-desc.webp" type="image/webp" />
-            <img class="cover"
+        <picture class="">
+           <!-- <source srcset="/img/images/man-desc.webp" type="image/webp" /> -->
+            <img class="cover programs__imgMan"
                 src="/img/images/man-desc.png"
                 alt=""
                 decoding="async"/>
@@ -68,7 +68,7 @@
                 <div class="btn">Подобрать программу</div>
             </div>
         </picture>
-        <div class="programs__itemMob">
+       <!-- <div class="programs__itemMob">
             <div>
                 <div class="programs__formMob">
                 <p class="title-2 programs__title-2">Поможем подобрать нужную программу <span class="free">БЕСПЛАТНО</span></p>
@@ -78,6 +78,6 @@
                 <source srcset="/img/images/man-mob.webp" media="(max-width: 767px)" type="image/webp" />
                 <img srcset="/img/images/man-mob.png"/>
             </picture>
-        </div>
+        </div> -->
     </div>
  </section>

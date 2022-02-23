@@ -8,14 +8,20 @@
     }
 }
 .title-2 {
-    font-size: $text-medium-small;
-    font-weight: 400;
+    font-size: $text-medium-maxi;
+    font-weight: 500;
     line-height: 125%;
     margin: 15px 0 20px;
     @include pad {
-        font-size: $text-medium-maxi;
+        font-size: $text-large-medium;
         margin: 20px 0 44px;
     }
+}
+.title-3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 15px;
 }
 .sup-title {
     font-size: $text-medium-small;
@@ -32,6 +38,13 @@
     font-size: $text-tiny;
     color: $color-main2;
     margin-bottom: 4px;
+}
+
+
+.suptitle__security {
+    font-size: 18px;
+    line-height: 140%;
+    display: inline-block;
 }
 
 

@@ -193,7 +193,7 @@
     border-left: 2px solid $color-white;
 }
 .request__checkbox:checked + .request__agreement::before {
-    background: $bg-grey2;
+    background: #CFD9E3;
 }
 .modal__inner {
     display: flex;

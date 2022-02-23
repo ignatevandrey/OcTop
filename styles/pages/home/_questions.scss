@@ -1,7 +1,7 @@
-.bonuses__wrap {
+.questions__wrap {
     position: relative;
     background-color: $color-main1;
-    .bonuses {
+    .questions {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -13,13 +13,13 @@
             justify-content: space-between;
             flex-direction: row;
         }
-        .bonuses__textWrap {
+        .questions__textWrap {
             margin-left: 0px;
             @include pad {
                 margin-left: 30px;
 
             }
-            .bonuses-title {
+            .questions-title {
                 font-size: $text-medium-small;
                 font-weight: 500;
                 line-height: 125%;
@@ -29,7 +29,7 @@
                     margin: 32px 0 20px;
                 }
             }
-            .bonuses-suptitle {
+            .questions-suptitle {
                 font-size: $text-medium-mini;
                 line-height: 130%;
                 margin: 0px 0 15px;
@@ -42,9 +42,9 @@
                 }
             }
         }
-        .bonuses-modal__inner {
+        .questions-modal__inner {
             display: block;
-            max-width: 280px;
+            max-width: 380px;
             @include pad {
                 min-width: 420px;
 
@@ -69,4 +69,8 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-70%);
+}
+
+.request__checkbox:checked + .request__agreementQuestions::before {
+    background-color: #969696;
 }

@@ -1,0 +1,52 @@
+.comfort__wrap {
+    padding: 50px 0 60px;
+    @include pad {
+        padding: 80px 0 74px;
+    }
+    .comfort {
+        max-width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        @include pad {
+            max-width: 100%;
+            flex-direction: row;
+        }
+            .comfort__item {
+                @include pad {
+                margin-right: 40px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+                .comfort__card {
+                    margin-top: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &:first-child {
+                        margin-top: 25px;
+                    }
+                    @include pad {
+                        flex-direction: row;
+                    }
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        @include pad {
+                            height: 164px;
+                            width: 164px;
+                            margin-right: 30px;
+                        }
+                    }
+
+                }
+            }
+    }
+}
+
+.comfort__suptitle {
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 10px;
+}

@@ -9,5 +9,6 @@
     {include "./home/started.tpl"}
     {include "./home/security.tpl"}
     {include "./home/comfort.tpl"}
+    {include "./home/questions.tpl"}
 {/block}
 
