@@ -58,7 +58,7 @@
         </div>
         <img class="programs_logo" src="img/images/programs-logo.png">
         <picture class="">
-           <!-- <source srcset="/img/images/man-desc.webp" type="image/webp" /> -->
+            <source srcset="/img/images/man-desc.webp" type="image/webp" /> -->
             <img class="cover programs__imgMan"
                 src="/img/images/man-desc.png"
                 alt=""
@@ -68,7 +68,7 @@
                 <div class="btn">Подобрать программу</div>
             </div>
         </picture>
-       <!-- <div class="programs__itemMob">
+        <div class="programs__itemMob">
             <div>
                 <div class="programs__formMob">
                 <p class="title-2 programs__title-2">Поможем подобрать нужную программу <span class="free">БЕСПЛАТНО</span></p>
@@ -78,6 +78,6 @@
                 <source srcset="/img/images/man-mob.webp" media="(max-width: 767px)" type="image/webp" />
                 <img srcset="/img/images/man-mob.png"/>
             </picture>
-        </div> -->
+        </div>
     </div>
  </section>
