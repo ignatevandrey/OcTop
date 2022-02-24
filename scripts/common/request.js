@@ -58,9 +58,6 @@ $(document).ready(function () {
             alert("Пожалуйста, дайте согласие на обработку ваших персональных данных.");
         }
     });
-
-
-
     //Модалки
     $('#bonus').click(function(){
         $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
@@ -83,16 +80,6 @@ $(document).ready(function () {
         $(".intopModal-request").arcticmodal(arcticmodal_settings);
         $('.modal-title').html($('#recall').attr('data-h'));
     });
-
-    // $(".intopModal-request").arcticmodal(arcticmodal_settings);
-    // $(".intopModal-privacy").arcticmodal(arcticmodal_settings);
-    // $(".intopModal-alert").arcticmodal(arcticmodal_settings);
-    // $(".intopModal-modal").arcticmodal(arcticmodal_settings);
-
-
-
-
-
     $(".request__link-privacy").click(function (event) {
         event.preventDefault();
     });
