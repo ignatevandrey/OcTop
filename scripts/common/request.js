@@ -48,7 +48,7 @@ $(document).ready(function () {
                     $(".intopModal-request").arcticmodal("close");
                 } catch (e) {
                 }
-
+                $('.thanks-text').html($('#program').attr('data-h'));
                 $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
                 //alert(`Спасибо, заявка отправлена.<br><br>Наш менеджер свяжется с Вами очень скоро.<br><br>Пожалуйста, убедитесь, что указали верный номер ${data.phone}`);
             } else {
@@ -63,10 +63,11 @@ $(document).ready(function () {
 
     //Модалки
     $('#bonus').click(function(){
-        $(".intopModal-thanks").arcticmodal();
+        $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
     });
     $('#consalt').click(function(){
         $(".intopModal-request").arcticmodal(arcticmodal_settings);
+        $('.modal-title').html($('#consalt').attr('data-h'));
     });
     $('#program').click(function(){
         $('.modal-title').html($('#program').attr('data-h'));
@@ -77,6 +78,10 @@ $(document).ready(function () {
     });
     $('#bonus3').click(function(){
         $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
+    });
+    $('#recall').click(function(){
+        $(".intopModal-request").arcticmodal(arcticmodal_settings);
+        $('.modal-title').html($('#recall').attr('data-h'));
     });
 
     // $(".intopModal-request").arcticmodal(arcticmodal_settings);

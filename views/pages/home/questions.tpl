@@ -22,7 +22,7 @@
                     <span class="request__agreement request__agreementQuestions">Даю <span class="request__link request__link-privacy" data-modal="privacy">согласие на обработку персональных данных</span></span>
                     </label>
                     <button id="bonus3" class="btn btn-default" type="button">
-                        <span class="btn__text">оставить заявку</span>
+                        <span class="btn__text">Получить бонусы</span>
                     </button>
                 </form>
             </div>
