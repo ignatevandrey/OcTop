@@ -63,11 +63,15 @@
 }
 
 .program {
-    z-index: 5;
-    max-width: 330px;
-    position: absolute;
-    right: 116px;
-    top: 61%;
+    display: none;
+    @include pad {
+        display: block;
+        z-index: 5;
+        max-width: 330px;
+        position: absolute;
+        right: 116px;
+        top: 61%;
+    }
 }
 
 .programs_title-2 {
@@ -78,6 +82,15 @@
 .free {
     color: $color-main2;
 }
+
+.programs__imgManWrap {
+    display: none;
+    @include pad {
+        display: block;
+    }
+}
+
+
 
 .programs__imgMan {
     display: none;

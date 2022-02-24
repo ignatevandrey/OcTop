@@ -97,6 +97,7 @@
                         decoding="async"/>
                 </picture>
             </div>
+            <div class="btn btn__budget">Получить консультацию</div>
             <div class="budget__item budget__item-white">
                 <h3 class="sup-title sup-title__budget">Локальная 1С в коробке</h3>
                 <div class="budget__list">

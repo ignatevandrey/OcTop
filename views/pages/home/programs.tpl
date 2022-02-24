@@ -24,7 +24,7 @@
                 <p>1С:Управление торговлей</p>
             </div>    
             <div class="programs__card">
-                <p>1С:Документооборот </p>
+                <p>1С:Документо - оборот </p>
             </div>    
             <div class="programs__card">
                 <p>1С:Бухгалтерия государственного учреждения</p>
@@ -58,7 +58,7 @@
         </div>
         <img class="programs_logo" src="img/images/programs-logo.png">
         <picture class="">
-            <source srcset="/img/images/man-desc.webp" type="image/webp" /> -->
+            <source srcset="/img/images/man-desc.webp" type="image/webp" />
             <img class="cover programs__imgMan"
                 src="/img/images/man-desc.png"
                 alt=""
