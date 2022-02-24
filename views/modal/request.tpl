@@ -3,7 +3,7 @@
 {block main}
     <div class="modal__inner">
         <div class="mod-request__content">
-            <h3 class="title modal-title">Оставить заявку</h3>
+            <h3 class="modal-title">Оставить заявку</h3>
             <form class="request__form">
                 <div class="request__fields">
                     <label class="request__field request__field-name">
@@ -11,9 +11,6 @@
                     </label>
                     <label class="request__field request__field-phone">
                         <input class="request__input request__input-phone" type="tel" name="phone"  placeholder="Номер телефона">
-                    </label>
-                    <label class="request__field request__field-comment">
-                        <textarea class="request__input request__input-comment" placeholder="Комментарии"></textarea>
                     </label>
                     <input type="hidden" class="request__from" />
                 </div>

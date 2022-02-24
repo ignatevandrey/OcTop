@@ -10,6 +10,7 @@
     }
 }
 .intopModal-privacy .modal__inner, .intopModal-alert .modal__inner {
+    background-color: $color-white;
     display: block;
     padding: 30px 10px;
     @include mobile {
@@ -18,6 +19,12 @@
     @include pad {
         padding: 40px 30px;
     }
+}
+
+.modal-title {
+    margin-bottom: 15px;
+    font-size: $text-medium-small;
+    font-weight: 500;
 }
 .intopModal-privacy .modal-title {
     text-align: center;

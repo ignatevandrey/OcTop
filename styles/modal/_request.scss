@@ -15,11 +15,10 @@
     position: absolute;
 }
 .intopModal-request .mod-request__content {
-    padding: 68px 40px 68px;
+    max-width: 760px;
+    background-color: $color-white;
+    padding: 21px 63px;
     flex: 1;
-    @include pad {
-        padding: 68px 26px 68px 49px;
-    }
 }
 .intopModal-request .close-white svg {
     fill: $color-text;

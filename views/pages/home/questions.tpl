@@ -10,10 +10,10 @@
                 <form class="request__form">
                     <div class="request__fields">
                         <label class="request__field request__field-name">
-                        <input class="request__input request__input-name" type="text" placeholder="Имя">
+                        <input class="request__input request__input-borderNon request__input-name" type="text" placeholder="Имя">
                         </label>
                         <label class="request__field request__field-phone">
-                        <input class="request__input request__input-phone" type="tel" name="phone"  placeholder="Номер ">
+                        <input class="request__input request__input-borderNon request__input-phone" type="tel" name="phone"  placeholder="Номер ">
                         </label>
                         <input type="hidden" class="request__from" />
                     </div>
