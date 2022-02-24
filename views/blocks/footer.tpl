@@ -15,7 +15,7 @@
                         <span>{$phone->title}</span>
                     </a>
                 </div>
-                <button class="btn btn-default" type="button">
+                <button id="recall" class="btn btn-default" data-h="Оставьте заявку и наш специалист перезвонит Вам" type="button">
                     <span class="btn__text">Перезвоните мне</span>
                 </button>
             </div>
