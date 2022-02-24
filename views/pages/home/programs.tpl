@@ -65,7 +65,7 @@
                 decoding="async"/>
                 <div class="program">
                 <p class="title-2 programs_title-2">Поможем подобрать нужную программу <span class="free">БЕСПЛАТНО</span></p>
-                <div class="btn">Подобрать программу</div>
+                <div id="program" class="btn" data-h="Оставьте заявку и получите программу от нашего специалиста бесплатно">Подобрать программу</div>
             </div>
         </picture>
         <div class="programs__itemMob">

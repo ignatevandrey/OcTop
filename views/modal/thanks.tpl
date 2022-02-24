@@ -6,6 +6,6 @@
     </div>
     <div class="modal-footer">
         <h3 class="title thanks-title">Благодарим за заявку!</h3>
-        <p class="thanks-text">В ближайшее время с Вами свяжется наш специалист </p>
+        <p class="thanks-text">В ближайшее время с Вами свяжется наш специалист чтобы вручить бонус</p>
     </div>
 {/block}

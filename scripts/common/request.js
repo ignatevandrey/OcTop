@@ -63,12 +63,28 @@ $(document).ready(function () {
 
     //Модалки
     $('#bonus').click(function(){
-        // $(".intopModal-request").arcticmodal(arcticmodal_settings);
-        $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
-        // $(".intopModal-privacy").arcticmodal(arcticmodal_settings);
-        // $(".intopModal-alert").arcticmodal(arcticmodal_settings);
-        // $(".intopModal-modal").arcticmodal(arcticmodal_settings);
+        $(".intopModal-thanks").arcticmodal();
     });
+    $('#consalt').click(function(){
+        $(".intopModal-request").arcticmodal(arcticmodal_settings);
+    });
+    $('#program').click(function(){
+        $('.modal-title').html($('#program').attr('data-h'));
+        $(".intopModal-request").arcticmodal(arcticmodal_settings);
+    });
+    $('#bonus2').click(function(){
+        $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
+    });
+    $('#bonus3').click(function(){
+        $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
+    });
+
+    // $(".intopModal-request").arcticmodal(arcticmodal_settings);
+    // $(".intopModal-privacy").arcticmodal(arcticmodal_settings);
+    // $(".intopModal-alert").arcticmodal(arcticmodal_settings);
+    // $(".intopModal-modal").arcticmodal(arcticmodal_settings);
+
+
 
 
 
