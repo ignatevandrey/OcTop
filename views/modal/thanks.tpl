@@ -2,7 +2,7 @@
 
 {block main}
     <div class="modal-header">
-        <img class="thanks-check-img" src="/img/svg/check.svg" alt="Благодарим за заявку!">
+        <img class="thanks-check-img" src="/img/svg/icon-modal-thanks.svg" alt="Благодарим за заявку!">
     </div>
     <div class="modal-footer">
         <h3 class="title thanks-title">Благодарим за заявку!</h3>
