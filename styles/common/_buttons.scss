@@ -1,0 +1,37 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    border-radius: 10px;
+    color: $color-white;
+    background: $btn-color;
+    padding: 13px 0px;
+    width: 100%;
+}
+
+.btn-default {
+    max-width: 420px;  
+}
+.btn-default-smoll {
+    max-width: 330px;
+}
+.btn-default-verySmoll {
+    max-width: 274px;
+}
+.btn:hover {
+    background-color: $btn-hover;
+}
+.btn:active {
+    background-color: $btn-ative;
+}
+.btn__text {
+    font-size: $text-medium-small;
+    line-height: 130%;
+    letter-spacing: .01em;
+    text-transform: none;
+    color: $color-white;
+    transition: all .3s ease;
+}
+

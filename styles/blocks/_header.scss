@@ -1,0 +1,335 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    z-index: 20;
+    transform: translateX(-50%);
+
+    max-width: 1920px;
+    background-color: $color-white;
+    color: $color-white;
+    font-size: $text-small;
+    @include pad{
+        background: $color-main2;
+        color: $color-white;
+        font-size: $text-tiny;
+    }
+}
+.header__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+
+    position: relative;
+}
+.header__logo{
+    @include pad{
+        order: 1;
+        flex-grow: 1;
+    }
+}
+.header__content{
+    max-height:100vh;
+    overflow:auto;
+
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 25;
+
+    transition: all 0.5s ease-out;
+    background: $color-main2;
+    width: 200px;
+    padding: 33px 0 24px;
+    border-radius: 5px;
+    @include pad{
+        display: contents;
+    }
+    &.animate{
+        right: -16px;
+    }
+}
+.header__contact{
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 0;
+    svg{
+        vertical-align: top;
+        fill: $color-white;
+    }
+    &:hover{
+        color: $link-hov;
+        svg{
+            fill: $link-hov;
+        }
+    }
+    @include pad{
+        order: 3;
+        flex-grow: 1;
+        text-align: end;
+    }
+}
+.header__contact img{
+    padding-right: 8px;
+}
+.header__menu{
+    @include pad{
+        order: 2;
+        flex-grow: 2;
+    }
+    .menu__list{
+        display: flex;
+        flex-direction: column;
+        @include pad{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+.menu__item{
+    width: 100%;
+    text-align: center;
+    padding: 6px 0;
+    @include pad{
+        width: auto;
+        padding: 10px 5px; 
+    }
+    &:hover > .menu__item-link{
+        color: $link-hov;
+        border-color: $link-hov;
+    }
+}
+.menu__item-link{
+    color: $color-white;
+    border-bottom: 1px solid $color-white;
+}
+.header__menuClose{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 25;
+    @include pad{
+        display: none;
+    }
+}
+.header__menuBurger{
+    @include pad{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .header-logo {
+//     display: inline-block;
+// }
+// .header-logo img {
+//     width: 102px;
+//     height: 39px;
+//     @include desktop-mini {
+//         width: 115px;
+//         height: 43px;
+//     }
+// }
+// .header__content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+//     flex: auto;
+// }
+// .header__phone {
+//     display: flex;
+//     align-items: center;
+//     width: 45px;
+//     margin-left: 8.5%;
+//     margin-right: 50px;
+//     font-weight: 600;
+//     font-size: 0;
+//     letter-spacing: .01em;
+//     color: $color-white;
+//     cursor: pointer;
+//     transition: all .3s ease;
+//     @include desktop-mini {
+//         width: auto;
+//         margin-right: 0;
+//         font-size: $text-medium-mini;
+//         color: initial;
+//     }
+// }
+// .header__phone svg {
+//     width: 25px;
+//     height: 25px;
+//     margin-right: 20px;
+//     fill: $color-text;
+//     transition: all .3s ease;
+//     @include desktop-mini {
+//         width: 18px;
+//         height: 18px;
+//         margin-right: 10px;
+//     }
+// }
+// .header__phone:hover svg {
+//     fill: $color-bg3;
+// }
+// .header__phone:hover {
+//     color: $color-bg3;
+// }
+// .header__menu {
+//     position: absolute;
+//     top: 60px;
+//     right: -450px;
+//     width: 420px;
+//     padding: 40px 16px 140px;
+//     background: $color-white;
+//     transition: all .3s ease;
+//     @include desktop-mini {
+//         position: static;
+//         display: block;
+//         right: auto;
+//         width: auto;
+//         padding: 0;
+//         background: transparent;
+//     }
+// }
+// .header__menu .menu__list {
+//     display: flex;
+//     flex-direction: column;
+//     @include desktop-mini {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//     }
+// }
+// .header__menu .menu__item {
+//     padding: 20px 0;
+//     font-size: $text-medium-mini;
+//     text-transform: uppercase;
+//     border-bottom: 1px solid $color-bg2;
+//     cursor: pointer;
+//     @include desktop-mini {
+//         padding: 0;
+//         text-transform: none;
+//         border-bottom: none;
+//     }
+// }
+// .header__menu .menu__item + .menu__item {
+//     margin-left: 0;
+//     @include desktop-mini {
+//         margin-left: 25px;
+//     }
+// }
+// .menu__item-link {
+//     display: block;
+//     text-align: left;
+//     transition: all .3s ease;
+// }
+// .header__menu .menu__item:hover .menu__item-link {
+//     color: $color-main1;
+// }
+// .header__menu .menu-icon {
+//     position: relative;
+//     padding-right: 21px;
+//     pointer-events: none;
+// }
+// .menu-icon {
+//     display: block;
+//     @include desktop-mini {
+//         display: initial;
+//     }
+// }
+// .header__menu .menu-icon::before {
+//     position: absolute;
+//     content: '';
+//     top: 8px;
+//     right: 0;
+//     width: 17px;
+//     height: 10px;
+//     background: url(/img/svg/icon-arrow-down.svg) 50% / cover no-repeat;
+//     transform: rotate(-90deg);
+//     @include desktop-mini {
+//         width: 11px;
+//         height: 6px;
+//         top: 12px;
+//         transform: rotate(0);
+//     }
+// }
+// .header__menu .menu-icon::before {
+//     position: absolute;
+//     content: '';
+//     top: 8px;
+//     right: 0;
+//     width: 17px;
+//     height: 10px;
+//     background: url(/img/svg/icon-arrow-down.svg) 50% / cover no-repeat;
+//     transform: rotate(-90deg);
+//     @include desktop-mini {
+//         width: 11px;
+//         height: 6px;
+//         top: 12px;
+//         transform: rotate(0);
+//     }
+// }
+// .header__btn-menu {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 60px;
+//     height: 100%;
+//     background: $color-main2;
+//     cursor: pointer;
+//     @include desktop-mini {
+//         display: none;
+//     }
+// }
+// .header__btn-menu-img {
+//     width: 20px;
+//     height: 14px;
+//     background: url(/img/svg/icon-menu-btn.svg) center / cover no-repeat;
+//     cursor: pointer;
+//     pointer-events: none;
+// }
+// .open__btn .header__btn-menu-img {
+//     width: 16px;
+//     height: 16px;
+//     background: url(/img/svg/icon-close-menu-btn.svg) center / cover no-repeat;
+//     cursor: pointer;
+//     pointer-events: none;
+// }

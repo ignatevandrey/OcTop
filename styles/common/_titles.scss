@@ -1,0 +1,50 @@
+.title {
+    font-size: $text-large-medium;
+    font-weight: 500;
+    line-height: 125%;
+    @include pad {
+    font-size: $text-huge;
+    line-height: 60px;
+    }
+}
+.title-2 {
+    font-size: $text-medium-maxi;
+    font-weight: 500;
+    line-height: 125%;
+    margin: 15px 0 20px;
+    @include pad {
+        font-size: $text-large-medium;
+        margin: 20px 0 44px;
+    }
+}
+.title-3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+.sup-title {
+    font-size: $text-medium-small;
+    font-weight: 500;
+}
+.text {
+    font-size: $text-medium-mini;
+    @include pad {
+        font-size: $text-small;
+    }
+}
+
+.text-small {
+    font-size: $text-tiny;
+    color: $color-main2;
+    margin-bottom: 4px;
+}
+
+
+.suptitle__security {
+    font-size: 18px;
+    line-height: 140%;
+    display: inline-block;
+}
+
+

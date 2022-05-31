@@ -1,0 +1,44 @@
+.intopModal-request .intopModal__whiteContent {
+    @include pad {
+        width: 650px;
+    }
+}
+.intopModal-request .mod-request__img {
+    display: none;
+    @include pad {
+        position: relative;
+        display: block;
+        width: 274px;
+    }
+}
+.intopModal-request .mod-request__img .image {
+    position: absolute;
+}
+.intopModal-request .mod-request__content {
+    max-width: 760px;
+    background-color: $color-white;
+    padding: 21px 63px;
+    flex: 1;
+}
+.intopModal-request .close-white svg {
+    fill: $color-text;
+    @include pad {
+        fill: $color-white;
+    }
+}
+.intopModal-request .close-white.intopModal__close svg {
+    width: 14px;
+    height: 14px;
+    @include pad {
+        width: 20px;
+        height: 20px;
+    }
+}
+.intopModal-request .close-white.intopModal__close {
+    width: 24px;
+    height: 24px;
+    @include pad {
+        width: 30px;
+        height: 30px;
+    }
+}

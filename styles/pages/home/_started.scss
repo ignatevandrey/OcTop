@@ -1,0 +1,83 @@
+.started__wrap {
+    padding-top: 60px;
+    padding-bottom: 55px;
+    @include pad {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .started {
+        max-width: fit-content;
+        margin:  0 auto;
+        display: flex;
+        flex-direction: column;
+        @include pad {
+            max-width: 100%;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .started__textWrap {
+            display: flex;
+            align-items: end;
+        }
+    }
+}
+
+.started__text {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.started__textSell {
+    font-size: 16px;
+    color: #969696;
+    margin-top: 16px;
+    margin-bottom: 34px;
+    @include pad {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+}
+
+.started__price {
+    color: $color-main2;
+    @include pad {
+    margin-left: 18px;
+    }
+}
+
+.started__sup-title {
+    font-size: $text-medium-mini;
+    font-weight: 500;
+    margin: 15px 0 15px;
+    @include pad {
+        font-size: $text-medium-maxi;
+        margin: 24px 0 33px;
+    }
+}
+
+.started__img {
+    display: none;
+    @include pad {
+        display: block;
+    }
+}
+
+.modal__innerStarted {
+    display: block;
+    max-width: 392px;
+    @include pad {
+        min-width: 420px;
+    }
+}
+
+.request__inputStarted {
+    background: $bg-grey2;
+}
+
+.request__inputStarted::placeholder {
+    color: #969696;
+}
+
+.request__checkbox:checked + .request__agreementStarted::before {
+    background-color: #969696;
+}
