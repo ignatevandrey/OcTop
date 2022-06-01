@@ -8,8 +8,8 @@
         padding-top: 28px;
             padding-bottom: 28px;
         @include pad {
-            padding-top: 38px;
-            padding-bottom: 62px;
+            padding-top: 50px;
+            padding-bottom: 40px;
             justify-content: space-between;
             flex-direction: row;
         }
@@ -55,4 +55,23 @@
 
 .bonuses_imgWrap {
     display: flex;
+    .bonuses_item {
+        transform: translateY(50px);
+        text-align: center;
+        background-color: $bg-grey;
+        border-radius: 16px;
+        margin-right: 32px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.bonuses_img-1{
+    display: block;
+    transform: translateY(-48px);
+}
+.bonuses_img-2{
+    display: block;
+    transform: translateY(-55px);
 }
