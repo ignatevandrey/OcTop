@@ -35,6 +35,34 @@
     <meta name="theme-color" content="#5bb2c1">
 
     <style>
+
+        @font-face {
+            font-family: 'Raleway';
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+            src: url('/fonts/Raleway-Regular.woff2) format('woff2')
+            url('/fonts/Raleway-Regular.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Raleway';
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+            src: url('/fonts/Raleway-Medium.woff2) format('woff2')
+            url('/fonts/Raleway-Medium.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+            src: url('/fonts/Raleway-ExtraBold.woff2) format('woff2')
+            url('/fonts/Raleway-ExtraBold.woff) format('woff')
+        }
+
         @font-face {
             font-family: 'Gilroy';
             font-weight: 400;
@@ -44,50 +72,6 @@
             url('/fonts/Gilroy-Regular.woff') format('woff');
         }
 
-        @font-face {
-            font-family: 'Gilroy';
-            font-weight: 600;
-            font-style: normal;
-            font-display: swap;
-            src: url('/fonts/Gilroy-Semibold.woff2') format('woff2'),
-            url('/fonts/Gilroy-Semibold.woff') format('woff');
-        }
-
-        @font-face {
-            font-family: 'Gilroy';
-            font-weight: 700;
-            font-style: normal;
-            font-display: swap;
-            src: url('/fonts/Gilroy-Bold.woff2') format('woff2'),
-            url('/fonts/Gilroy-Bold.woff') format('woff');
-        }
-
-        @font-face {
-            font-family: 'Manrope';
-            font-weight: 400;
-            font-style: normal;
-            font-display: swap;
-            src: url('/fonts/Manrope-Regular.woff2') format('woff2'),
-            url('/fonts/Manrope-Regular.woff') format('woff');
-        }
-
-        @font-face {
-            font-family: 'Manrope';
-            font-weight: 500;
-            font-style: normal;
-            font-display: swap;
-            src: url('/fonts/Manrope-Medium.woff2') format('woff2'),
-            url('/fonts/Manrope-Medium.woff') format('woff');
-        }
-
-        @font-face {
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-style: normal;
-            font-display: swap;
-            src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
-            url('/fonts/Montserrat-Medium.woff') format('woff');
-        }
     </style>
 
     {$common_styles}

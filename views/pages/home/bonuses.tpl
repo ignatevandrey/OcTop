@@ -7,7 +7,7 @@
                 <div class="bonuses_item">
                     <picture class="bonuses_img-1">
                     <source srcset="/img/images/bonuses/bonuses1.png" type="image/webp" />
-                    <img class="image cover"
+                    <img class="image"
                     src="/img/images/bonuses/bonuses1.png"
                     alt=""
                     decoding="async"/>
@@ -17,7 +17,7 @@
                 <div class="bonuses_item">
                     <picture class="bonuses_img-2">
                     <source srcset="/img/images/bonuses/bonuses2.png" type="image/webp" />
-                    <img class="image cover"
+                    <img class="image"
                     src="/img/images/bonuses/bonuses2.png"
                     alt=""
                     decoding="async"/>
