@@ -2,6 +2,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
     cursor: pointer;
     transition: all .3s ease;
     border-radius: 10px;
@@ -15,7 +16,8 @@
     max-width: 420px;  
 }
 .btn-default-smoll {
-    max-width: 330px;
+    max-width: 300px;
+
 }
 .btn-default-verySmoll {
     max-width: 274px;

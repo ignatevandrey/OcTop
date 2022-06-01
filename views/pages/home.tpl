@@ -4,8 +4,8 @@
     {include "./home/first.tpl"}
     {include "./home/bonuses.tpl"}
     {include "./home/budget.tpl"}
-    {include "./home/comfort.tpl"}
     {include "./home/programs.tpl"}
+    {include "./home/comfort.tpl"}
     {include "./home/questions.tpl"}
     {include "./home/security.tpl"}
     {include "./home/started.tpl"}

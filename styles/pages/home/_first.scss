@@ -1,7 +1,8 @@
 
 .first {
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     padding: 65px 16px 60px;
@@ -41,18 +42,38 @@
         }
     }
     img {
-        width: 38px;
-        height: 38px;
+        width: 33px;
+        height: 33px;
         @include pad {
-            width: 48px;
-            height: 48px;
+            width: 33px;
+            height: 33px;
             }
     }
 }
 
-// .first__item-girl {
-//     max-width: 500px;
-//     @include pad {
-//         max-width: initial;
-//     }
-// }
+.first__item {
+    z-index: 3;
+}
+
+.first__item-girl {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 500px;
+    @include pad {
+        display: block;
+        max-width: initial;
+        z-index: 1;
+    }
+}
+.first__item-girl-mob {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 500px;
+    @include pad {
+        display: none;
+        max-width: initial;
+    }
+}

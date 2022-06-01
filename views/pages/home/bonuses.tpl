@@ -3,9 +3,26 @@
         <div class="bonuses__textWrap">
             <h2 class="title-2">Оставьте заявку и получите <br>
              бонусы от нашей компании</h2>
-            <p class="bonuses-suptitle">1 месяц работы в подарок</p>
-            <p class="bonuses-suptitle">Перенос вашей базы в облако <br> 
-            <a>БЕСПЛАТНО</a></p>
+            <div class="bonuses_item">
+                <picture class="">
+                <source srcset="/img/images/bonuses/bonuses1.png" type="image/webp" />
+                <img class="image cover"
+                src="/img/images/bonuses/bonuses1.png"
+                alt=""
+                decoding="async"/>
+                </picture>
+                <p class="bonuses-suptitle">1 месяц работы <a>в подарок</a></p>
+            </div>
+            <div class="bonuses_item">
+                <picture class="">
+                <source srcset="/img/images/bonuses/bonuses2.png" type="image/webp" />
+                <img class="image cover"
+                src="/img/images/bonuses/bonuses2.png"
+                alt=""
+                decoding="async"/>
+                </picture>
+                <p class="bonuses-suptitle">1 месяц работы в подарок</p>
+            </div>
         </div>
         <div class="modal__inner bonuses-modal__inner">
             <div class="mod-request__content">
@@ -30,11 +47,5 @@
             </div>
         </div>
     </div>
-    <picture class="hand">
-        <source srcset="/img/images/hand.webp" type="image/webp" />
-        <img class="image cover"
-            src="/img/images/hand.png"
-            alt=""
-            decoding="async"/>
-    </picture>
+
 </section>

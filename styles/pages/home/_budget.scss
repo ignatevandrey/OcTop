@@ -1,5 +1,4 @@
 .budget {
-    background-color: $bg-grey;
     padding: 16px;
     @include pad {
         padding: 46px 0;
@@ -48,10 +47,10 @@
 }
 
 .budget__item-blue {
-    background-color: $color-main1;
+    background-color: $budget-color-green;
 }
 .budget__item-white {
-    background-color: $color-white;
+    background-color: $budget-color-red;
 }
 
 .budget__list {
