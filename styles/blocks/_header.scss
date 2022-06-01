@@ -7,11 +7,19 @@
     transform: translateX(-50%);
 
     max-width: 1920px;
+<<<<<<< HEAD
     background-color: $color-white;
     color: $color-white;
     font-size: $text-small;
     @include pad{
         background: $color-main2;
+=======
+    background-color: $color-black;
+    color: $color-white;
+    font-size: $text-small;
+    @include pad{
+        background: $color-black;
+>>>>>>> andrey
         color: $color-white;
         font-size: $text-tiny;
     }
@@ -40,7 +48,11 @@
     z-index: 25;
 
     transition: all 0.5s ease-out;
+<<<<<<< HEAD
     background: $color-main2;
+=======
+    background: $color-black;
+>>>>>>> andrey
     width: 200px;
     padding: 33px 0 24px;
     border-radius: 5px;

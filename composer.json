@@ -1,16 +1,14 @@
 {
-    "name": "intopweb/template",
+    "name": "intopweb/slavdom-aurora",
     "type": "project",
     "require": {
-        "php": "7.4.*",
+        "php": "7.2.* || 7.4.27",
         "smarty/smarty": "^3.1",
         "vlucas/phpdotenv": "^5.3",
         "nadar/quill-delta-parser": "^2.7",
         "ext-mysqli": "*",
         "ext-json": "*",
-        "ext-curl": "*",
-        "ext-mbstring": "*",
-        "ext-imagick": "*"
+        "ext-curl": "*"
     },
-    "description": "Интернет-портал TEMPLATE Development"
+    "description": "Комплекс апартаментов АВРОРА"
 }

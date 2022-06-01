@@ -15,14 +15,17 @@ module.exports = {
     },
     scripts: {
         vendor: [
+            "./scripts/vendor/jquery-3.6.0.min.js",
+            "./scripts/vendor/jquery.viewport.intop.js",
             "./scripts/vendor/jquery.arcticmodal.min.js",
             "./scripts/vendor/jquery.scrollTo.min.js",
-            "./scripts/vendor/jquery.maskedinput.min.js",
-            "./scripts/vendor/swiper-bundle.min.js"
+            "./scripts/vendor/slick.min.js",
+            "./scripts/vendor/swiper-bundle.min.js",
+            "./scripts/vendor/fitie.js"
         ],
         inline: [
-            "./scripts/inline/jquery-3.6.0.min.js",
-            "./scripts/inline/viewport.js"
+            "./scripts/inline/check-webp-support.js",
+            "./scripts/inline/load-font.js"
         ],
         entries: {
             input: [

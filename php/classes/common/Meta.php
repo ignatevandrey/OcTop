@@ -4,9 +4,9 @@
      */
     class Meta
     {
-        public $title = "TEMPLATE Девелопмент";
-        public $description = "TEMPLATE Девелопмент";
-        public $keywords = "TEMPLATE Девелопмент";
+        public $title = "ЖК «Аврора» - Официальный сайт застройщика";
+        public $description = "Свои апартаменты в Ялте с видом на море. Старт продаж";
+        public $keywords = "ЖК Аврора, Ялта, вид на море, теплый климат";
         public $image = "/img/og-image.png";
         public $url;
 

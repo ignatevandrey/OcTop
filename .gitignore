@@ -1,6 +1,5 @@
 .DS_store
 /.idea/
-/.vscode/
 /node_modules/
 /cache/templates/
 cache/

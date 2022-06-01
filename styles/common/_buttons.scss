@@ -2,6 +2,10 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
+=======
+    align-self: center;
+>>>>>>> andrey
     cursor: pointer;
     transition: all .3s ease;
     border-radius: 10px;
@@ -15,7 +19,12 @@
     max-width: 420px;  
 }
 .btn-default-smoll {
+<<<<<<< HEAD
     max-width: 330px;
+=======
+    max-width: 300px;
+
+>>>>>>> andrey
 }
 .btn-default-verySmoll {
     max-width: 274px;

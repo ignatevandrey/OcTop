@@ -8,10 +8,9 @@ const reload = done => {
 
 const server = () => {
     sync.init({
-        proxy: "FirstMoney"
-        // proxy: "template",
-        // ui: false,
-        // notify: false
+        proxy: "aurora",
+        ui: false,
+        notify: false
     });
 };
 

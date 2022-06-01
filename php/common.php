@@ -10,7 +10,7 @@
     {
         $ext = ".php";
         $folder = ROOT . "/php/classes";
-        $class_name = str_replace("_" , DIRECTORY_SEPARATOR, $class_name);
+        $class_name = str_replace("_", DIRECTORY_SEPARATOR, $class_name);
 
         $file_name = $folder . DIRECTORY_SEPARATOR . $class_name;
         $path = $file_name . $ext;

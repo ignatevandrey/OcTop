@@ -88,5 +88,42 @@
         $part2 = substr($phone, 7, 2);
         $part3 = substr($phone, 9, 2);
 
-        return "{$prefix} ({$code}) {$part1}-{$part2}-{$part3}";
+        return "{$prefix}({$code}) {$part1}-{$part2}-{$part3}";
+    }
+
+    /**
+     * Получаем boolean из строки Да/Нет
+     * @param string $db_yes_no
+     * @return bool
+     * @throws Exception
+     */
+    function bool_from_db(string $db_yes_no): bool
+    {
+        if ($db_yes_no == "1") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Получаем отформатированную дату из БД (квартал и год)
+     * @param string $date
+     * @return string
+     * @throws Exception
+     */
+    function date_from_db(string $date): string
+    {
+        $date = new DateTime($date);
+        $quarter = ceil(date_format($date, "m") / 3);
+        $year = date_format($date, "Y");
+        return $quarter . " кв. " . $year . " г.";
+    }
+
+    /**
+     * @param $img_path
+     * @return string|string[]|null
+     */
+    function img_path_to_webp($img_path) {
+        return preg_replace("/\.(jpe?g|png)$/", ".webp", $img_path);
     }

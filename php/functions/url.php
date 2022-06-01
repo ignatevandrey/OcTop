@@ -1,55 +1,26 @@
 <?
 
-    /**
-     * Редирект
-     * @param string $location
-     * @param int $code
-     */
-    function redirect(string $location, int $code = 303)
-    {
-        header("Location: $location", true, $code);
-        exit;
-    }
-
-    /**
-     * @return Page
-     * @throws Exception
-     */
     function get_page(): Page
     {
+        $url = explode("/", get_current_url(false));
+        $url_lvl1 = $url[3];
+
         try {
-            return new SimplePage(200, "home", "Главная");
+            // Страница не найдена
+            if (($url_lvl1 == "404") || ($url_lvl1 == "home")) {
+                return Page::code404();
+            }
+
+            $url_lvl1 = $url_lvl1 ?: "home";
+            if (file_exists(ROOT . "/views/pages/$url_lvl1.tpl")) {
+                return Page::code200($url_lvl1);
+            } else {
+                // Страница не найдена
+                return Page::code404();
+            }
         } catch (Exception $e) {
             return Page::code415();
         }
-    }
-
-    /**
-     * @param string $url_in
-     * @return Url
-     */
-    function get_url_lvls(string $url_in = ""): Url
-    {
-        if (!$url_in) {
-            $url_in = $_SERVER["REQUEST_URI"];
-        }
-        $url_in = explode("?", $url_in, 5);
-        $url_full = explode("/", $url_in[0]);
-        $url_lvl1 = $url_full[1];
-        $url_lvl2 = null;
-        $url_lvl3 = null;
-        $url_lvl4 = null;
-        if (count($url_full) >= 3) {
-            $url_lvl2 = $url_full[2];
-        }
-        if (count($url_full) >= 4) {
-            $url_lvl3 = $url_full[3];
-        }
-        if (count($url_full) >= 5) {
-            $url_lvl4 = $url_full[4];
-        }
-
-        return new Url($url_lvl1, $url_lvl2, $url_lvl3, $url_lvl4);
     }
 
     /**
@@ -75,16 +46,4 @@
             $current_url .= $url[0];
         }
         return $current_url;
-    }
-
-    /**
-     * @param string $url
-     * @param string $param
-     * @return string
-     */
-    function remove_query_param(string $url, string $param): string
-    {
-        $url = preg_replace("/(&|\?)" . preg_quote($param) . "=[^&]*$/", "", $url);
-        $url = preg_replace("/(&|\?)" . preg_quote($param) . "=[^&]*&/", "$1", $url);
-        return $url;
     }

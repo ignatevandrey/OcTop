@@ -2,7 +2,7 @@ import { windowHeight } from "./global";
 
 export let arcticmodal_settings = {
     overlay: {
-        css: { opacity: 0.3 }
+        css: { opacity: 0.9 }
     },
     beforeOpen(data, modal) {
         let modalParent = $(modal).parent();
@@ -13,7 +13,7 @@ export let arcticmodal_settings = {
 
 $(document).ready(function() {
     window.alert = function(content) {
-        $(".intopModal-alert .modal__inner").html(content).parents(".intopModal-alert").arcticmodal(arcticmodal_settings);
+        $(".intopModal-alert .intopModal__whiteContent").html(content).parents(".intopModal-alert").arcticmodal(arcticmodal_settings);
     }
 
     $(window).resize(function () {

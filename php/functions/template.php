@@ -35,14 +35,14 @@
      */
     function actual_bundle_path(string $folder, string $name): string
     {
-        $files_with_timestamp = array_map(function($file_path) {
+        $files_with_timestamp = array_map(function ($file_path) {
             return [
                 "path" => $file_path,
                 "timestamp" => filectime($file_path)
             ];
         }, glob("{$folder}/*"));
 
-        $target_files = array_filter($files_with_timestamp, function($file) use ($name) {
+        $target_files = array_filter($files_with_timestamp, function ($file) use ($name) {
             return preg_match("/{$name}(\.[0-9a-f]{8})?\.(css|js)$/", $file["path"]);
         });
 
@@ -122,4 +122,33 @@
         }
 
         return "";
+    }
+
+    function get_build_list($date) {
+        if (file_exists(ROOT . "/img/build/{$date}")) {
+            $build_list = [];
+            $build_scan = scandir(ROOT . "/img/build/{$date}/");
+            foreach (array_diff($build_scan, array('.', '..')) as $value) {
+                $value = "/img/build/{$date}/" . $value;
+                array_push($build_list, $value);
+            }
+            return $build_list;
+        } else {
+            return "Ошибка get_build_list(). По указанному пути файлов/каталога не существует...";
+        }
+    }
+    function get_build_first($date) {
+        $index = 0;
+        if (file_exists(ROOT . "/img/build/{$date}")) {
+            $build_list_first = [];
+            $build_scan = scandir(ROOT . "/img/build/{$date}/");
+            foreach(array_diff($build_scan, array('.', '..')) as $ind => $val) {
+                if ($index == 0) {
+                    array_push($build_list_first, $val);
+                }
+            }
+            return $build_list_first;
+        } else {
+            return "Ошибка get_build_first(). По указанному пути файлов/каталога не существует...";
+        }
     }
