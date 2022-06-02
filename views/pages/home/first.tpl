@@ -1,7 +1,7 @@
 <section class="container first">
     <div class="first__item">
         <h1 class="title first-title">Аренда 1С в облаке<br>
-            за <a href="/">950 рублей!</a>
+            за <a href="/">1000 рублей!</a>
         </h1>
         <h2 class="first-suptitle">Быстрая и экономная альтернатива <br>
             коробочной версии 1С</h2>
@@ -23,9 +23,9 @@
         </div>
     </div>
     <picture class="first__item-girl-mob">
-        <source srcset="/img/images/first/girl-mob.webp" media="(min-width: 767px)" type="image/webp" />
+        <source srcset="/img/images/first/girl-mob.png" type="image/webp" />
         <img class="image cover"
-            src="/img/images/girl-mob.png"
+            src="/img/images/first/girl-mob.png"
             alt="ДЕВЕЛОПМЕНТ ЖИЛОЙ И КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ. О компании"
             decoding="async"/>
     </picture>
@@ -33,7 +33,7 @@
         <source srcset="/img/images/first/girl-desc.png" type="image/webp" />
         <img class="image cover"
             src="/img/images/first/girl-desc.png"
-            alt="ДЕВЕЛОПМЕНТ ЖИЛОЙ И КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ. О компании"
+            alt=""
             decoding="async"/>
     </picture>
 </section>

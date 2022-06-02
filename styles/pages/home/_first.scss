@@ -68,12 +68,12 @@
     }
 }
 .first__item-girl-mob {
+    z-index: 1;
     position: absolute;
     right: 0;
     bottom: 0;
     max-width: 500px;
     @include pad {
         display: none;
-        max-width: initial;
     }
 }

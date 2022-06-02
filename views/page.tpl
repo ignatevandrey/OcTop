@@ -35,43 +35,41 @@
     <meta name="theme-color" content="#5bb2c1">
 
     <style>
+        @font-face {
+            font-family: 'Raleway';
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+            src: url('/fonts/Raleway-ExtraBold.woff2') format('woff2'),
+            url('/fonts/Raleway-ExtraBold.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'Raleway';
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+            src: url('/fonts/Raleway-Medium.woff2') format('woff2'),
+            url('/fonts/Raleway-Medium.woff') format('woff');
+        }
 
         @font-face {
             font-family: 'Raleway';
             font-weight: 300;
             font-style: normal;
             font-display: swap;
-            src: url('/fonts/Raleway-Regular.woff2) format('woff2')
-            url('/fonts/Raleway-Regular.woff) format('woff')
+            src: url('/fonts/Raleway-Regular.woff2') format('woff2'),
+            url('/fonts/Raleway-Regular.woff') format('woff');
         }
 
         @font-face {
-            font-family: 'Raleway';
+            font-family: 'Montserrat';
             font-weight: 400;
             font-style: normal;
             font-display: swap;
-            src: url('/fonts/Raleway-Medium.woff2) format('woff2')
-            url('/fonts/Raleway-Medium.woff) format('woff')
+            src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
+            url('/fonts/Montserrat-Medium.woff') format('woff');
         }
-
-        @font-face {
-            font-family: 'Raleway';
-            font-weight: 700;
-            font-style: normal;
-            font-display: swap;
-            src: url('/fonts/Raleway-ExtraBold.woff2) format('woff2')
-            url('/fonts/Raleway-ExtraBold.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: 'Gilroy';
-            font-weight: 400;
-            font-style: normal;
-            font-display: swap;
-            src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
-            url('/fonts/Gilroy-Regular.woff') format('woff');
-        }
-
     </style>
 
     {$common_styles}

@@ -20,21 +20,22 @@
 
             }
             .bonuses-title {
+                color: #FFFFFF;
                 font-size: $text-medium-small;
                 font-weight: 500;
                 line-height: 125%;
                 margin: 0px 0 15px;
                 @include pad {
-                    font-size: $text-large-medium;
+                    font-size: $text-large;
                     margin: 32px 0 20px;
                 }
             }
             .bonuses-suptitle {
-                font-size: $text-medium-mini;
-                line-height: 130%;
+                font-size: $text-medium-small;
+                line-height: 100%;
                 margin: 0px 0 15px;
                 @include pad {
-                    font-size: $text-medium-small;
+                    font-size: $text-medium-maxi;
                     margin: 0px 0 10px;
                 }
                 a {
@@ -47,31 +48,70 @@
             max-width: 280px;
             @include pad {
                 min-width: 420px;
-
             }
         }
     }
 }
 
 .bonuses_imgWrap {
+    margin-bottom: 46px;
+    @include pad {
+        margin-bottom: 0;
+    }
     display: flex;
     .bonuses_item {
-        transform: translateY(50px);
+        height: 155px;
+        max-width: 222px;
+        width: 100%;
+        font-size: $text-medium-small;
         text-align: center;
         background-color: $bg-grey;
         border-radius: 16px;
-        margin-right: 32px;
+        margin-right: 18px;
+        @include pad {
+                transform: translateY(60px);
+                padding: 20px;
+                font-weight: 400;
+                font-size: $text-medium-maxi;
+                max-width: 273px;
+                width: 100%;
+                margin-right: 32px;
+            }
         &:last-child {
             margin-right: 0;
         }
     }
 }
 
+.title_bonuses {
+    margin-bottom: 70px;
+}
+
 .bonuses_img-1{
     display: block;
-    transform: translateY(-48px);
+    transform: translateY(-44px);
+    @include pad {
+            transform: translateY(-60px);
+        }
 }
 .bonuses_img-2{
     display: block;
-    transform: translateY(-55px);
+    transform: translateY(-52px);
+    @include pad {
+            transform: translateY(-70px);
+        }
+}
+
+.bonuses-suptitle-free {
+    transform: translateY(-44px);
+    @include pad {
+            transform: translateY(-70px);
+        }
+}
+
+.bonuses-suptitle-present {
+    transform: translateY(-30px);
+    @include pad {
+            transform: translateY(-50px);
+        }
 }

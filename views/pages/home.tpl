@@ -3,6 +3,7 @@
 {block main}
     {include "./home/first.tpl"}
     {include "./home/bonuses.tpl"}
+    {include "./home/profitable.tpl"}
     {include "./home/budget.tpl"}
     {include "./home/programs.tpl"}
     {include "./home/comfort.tpl"}

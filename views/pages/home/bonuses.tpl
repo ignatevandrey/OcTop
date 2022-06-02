@@ -1,7 +1,7 @@
 <section class="bonuses__wrap">
     <div class="container bonuses">
         <div class="bonuses__textWrap">
-            <h2 class="title-2">Оставьте заявку и получите <br>
+            <h2 class="title_bonuses title-2">Оставьте заявку и получите <br>
              бонусы от нашей компании</h2>
              <div class="bonuses_imgWrap">
                 <div class="bonuses_item">
@@ -12,7 +12,7 @@
                     alt=""
                     decoding="async"/>
                     </picture>
-                    <p class="bonuses-suptitle">1 месяц работы <a>в подарок</a></p>
+                    <p class="bonuses-suptitle bonuses-suptitle-present">1 месяц работы <br> в <a>ПОДАРОК</a></p>
                 </div>
                 <div class="bonuses_item">
                     <picture class="bonuses_img-2">
@@ -22,7 +22,7 @@
                     alt=""
                     decoding="async"/>
                     </picture>
-                    <p class="bonuses-suptitle">1 месяц работы в подарок</p>
+                    <p class="bonuses-suptitle bonuses-suptitle-free">Перенос вашей базы в облако <a>БЕСПЛАТНО</a></p>
                 </div>
             </div>
         </div>
