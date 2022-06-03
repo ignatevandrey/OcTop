@@ -40,44 +40,42 @@
             </div>    
             <div class="programs__card">
                 <p>1С:Зарплата и управление персоналом</p>
-            </div>    
-        </div>
-        <div class="programs__item-2">
-            <div class="programs__card">
-                <p>1С:Бухгалтерия строительной организации</p>
-            </div>
-            <div class="programs__card">
-                <p>1С:Комплексная автоматизация</p>
-            </div>
-            <div class="programs__card">
-                <p>1С:Зарплата и кадры государственного учреждения</p>
-            </div>
-            <div class="programs__card">
-                <p>И много других!</p>
-            </div>
-        </div>
-        <img class="programs_logo" src="img/images/programs-logo.png">
-        <picture class="">
-            <source srcset="/img/images/man-desc.webp" type="image/webp" />
+            </div> 
+             <picture class="">
+            <source srcset="/img/images/programm/girl.webp" type="image/webp" />
             <img class="cover programs__imgMan"
-                src="/img/images/man-desc.png"
+                src="/img/images/programm/girl.png"
+                alt=""
+                decoding="async"/>    
+            </picture>   
+        </div>
+        <div class="programs_item-2Wrap">
+            <div class="programs__item-2">
+                <div class="programs__card">
+                    <p>1С:Бухгалтерия строительной организации</p>
+                </div>
+                <div class="programs__card">
+                    <p>1С:Комплексная автоматизация</p>
+                </div>
+                <div class="programs__card">
+                    <p>1С:Зарплата и кадры государственного учреждения</p>
+                </div>
+                <div class="programs__card">
+                    <p>И много других!</p>
+                </div>
+            </div>
+            <div class="program">
+                 <p class="title-2 programs_title-2">Поможем подобрать нужную программу <br> <a class="free">БЕСПЛАТНО</a></p>
+                <div id="program" class="btn btn-programs" data-h="Оставьте заявку и получите программу от нашего специалиста бесплатно">Подобрать программу</div>
+                <picture class="programm_box">
+                <source srcset="/img/images/programm/programm_box.webp" type="image/webp" />
+                <img class="programm_box-img"
+                src="/img/images/programm/programm_box.png"
                 alt=""
                 decoding="async"/>
-                <div class="program">
-                <p class="title-2 programs_title-2">Поможем подобрать нужную программу <span class="free">БЕСПЛАТНО</span></p>
-                <div id="program" class="btn" data-h="Оставьте заявку и получите программу от нашего специалиста бесплатно">Подобрать программу</div>
+                </picture>
             </div>
-        </picture>
-        <div class="programs__itemMob">
-            <div>
-                <div class="programs__formMob">
-                <p class="title-2 programs__title-2">Поможем подобрать нужную программу <span class="free">БЕСПЛАТНО</span></p>
-                <div class="btn">Подобрать программу</div>
-            </div>
-            <picture>
-                <source srcset="/img/images/man-mob.webp" media="(max-width: 767px)" type="image/webp" />
-                <img srcset="/img/images/man-mob.png"/>
-            </picture>
         </div>
+        <img class="programs_logo" src="img/images/programm/1c.png">
     </div>
  </section>

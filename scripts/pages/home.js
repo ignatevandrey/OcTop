@@ -1,4 +1,4 @@
-import { scrollToBlock } from "../common/helpers";
+// import { scrollToBlock } from "../common/helpers";
 
 $(document).ready(function () {
     // Бургер

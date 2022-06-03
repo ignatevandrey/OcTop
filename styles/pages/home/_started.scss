@@ -1,9 +1,9 @@
 .started__wrap {
-    padding-top: 60px;
-    padding-bottom: 55px;
+    padding-top: 34px;
+    padding-bottom: 59px;
     @include pad {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 54px;
+        padding-bottom: 74px;
     }
     .started {
         max-width: fit-content;
@@ -22,36 +22,68 @@
     }
 }
 
+.started_item {
+    position: relative;
+    border-radius: 16px;
+    background: $color-main1;
+    padding: 25px 25px;
+    margin: 30px 0;
+    max-width: 382px;
+    @include pad {
+        max-width: 572px;
+        height: fit-content;
+        align-self: flex-end;
+        margin: 0 64px 0 0;
+        padding: 25px 50px 25px 25px;
+    }
+}
+
+.started_img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate3d(50%, -50%, 0);
+    display: block;
+}
+
+.started_titleWrap {
+    width: fit-content;
+    margin: 0 auto;
+    @include pad {
+        margin: 0 0 -50px 0;
+    }
+}
+
+.started_title {
+    color: #FFFFFF;
+    margin: 10px 2px;
+}
+
 .started__text {
     font-weight: 500;
-    margin-bottom: 8px;
 }
 
 .started__textSell {
     font-size: 16px;
-    color: #969696;
-    margin-top: 16px;
-    margin-bottom: 34px;
+    color: $color-white;
     @include pad {
-        font-size: 18px;
-        margin-bottom: 0px;
+            margin-bottom: 0px;
     }
 }
 
 .started__price {
-    color: $color-main2;
+    color: $color-white;
     @include pad {
-    margin-left: 18px;
     }
 }
 
 .started__sup-title {
     font-size: $text-medium-mini;
     font-weight: 500;
-    margin: 15px 0 15px;
+    margin-top: 15px;
     @include pad {
         font-size: $text-medium-maxi;
-        margin: 24px 0 33px;
+        margin: 8px 0 26px;
     }
 }
 

@@ -1,9 +1,11 @@
 <section class="questions__wrap">
     <div class="container questions">
         <div class="questions__textWrap">
-            <h2 class="title-2">У вас остались вопросы? <br> Сложно разобраться в теме?</h2>
-            <p class="questions-suptitle">Оставьте заявку и наш специалист <br>расскажет об 1С в облаке в доступной <br> форме</p>
-            <p class="questions-suptitle">Консультация <a>БЕСПЛАТНО</a></p>
+            <h2 class="title questions-title">У вас остались вопросы? <br> Сложно разобраться в теме?</h2>
+            <div class="questions_card">
+                <p class="questions-suptitle">Оставьте заявку и наш специалист <br>расскажет об 1С в облаке в доступной <br> форме</p>
+                <p class="questions-suptitle">Консультация <a>БЕСПЛАТНО</a></p>
+            </div>
         </div>
         <div class="modal__inner questions-modal__inner">
             <div class="mod-request__content">
@@ -28,11 +30,4 @@
             </div>
         </div>
     </div>
-    <picture class="hand">
-        <source srcset="/img/images/hand.webp" type="image/webp" />
-        <img class="image cover"
-            src="/img/images/hand.png"
-            alt=""
-            decoding="async"/>
-    </picture>
 </section>

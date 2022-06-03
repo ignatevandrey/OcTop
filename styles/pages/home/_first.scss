@@ -11,6 +11,7 @@
         padding: 65px 16px 80px;
         }
         .first-title {
+            font-size: 64px;
                 margin-top: 32px;
                 @include pad {
                 line-height: 60px;
@@ -58,7 +59,7 @@
 .first__item-girl {
     display: none;
     position: absolute;
-    right: 0;
+    right: 16px;
     bottom: 0;
     max-width: 500px;
     @include pad {
@@ -70,7 +71,7 @@
 .first__item-girl-mob {
     z-index: 1;
     position: absolute;
-    right: 0;
+    right: 16px;
     bottom: 0;
     max-width: 500px;
     @include pad {

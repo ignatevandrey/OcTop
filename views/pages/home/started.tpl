@@ -1,14 +1,24 @@
 <section class="started__wrap">
     <div class="container">
+    <div class="started_titleWrap">
         <h2 class="title">Начать работу</h2>
+            <p class="started__sup-title">Работа через веб-браузер и тонкий клиент</p>
+            </div>
             <div class="started">
-                <div>
-                    <p class="started__sup-title">Работа через веб-браузер и тонкий клиент</p>
+                <div class="started_item">
+                    <picture class="">
+                        <source srcset="/img/images/started/started_mob.webp" media="(max-width: 900px)" type="image/webp" />
+                        <source srcset="/img/images/started/started_mob.png" media="(max-width: 900px)"/>
+                        <source srcset="/img/images/started/started_desc.webp" type="image/webp" />
+                        <img class="cover started_img"
+                            src="/img/images/started/started_desc.png"
+                            alt=""
+                            decoding="async"/>    
+                    </picture> 
                     <div class="started__textWrap">
-                        <img class="started__img" src="img/images/started-img.jpg">
                         <div class="started__price">
                             <p class="text started__text">Цена за 1 сеанс</p>
-                            <p class="title">950 р/мес.*</p>
+                            <a class="title started_title">800 р/мес.*</a>
                         </div>
                     </div>
                     <p class="started__textSell">*скидка 10% при оплате за 6 месяцев и 20% - за 1 год</p>

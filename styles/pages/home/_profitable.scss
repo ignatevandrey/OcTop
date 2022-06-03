@@ -1,18 +1,59 @@
-.profitable_wrap {
-padding: 30px 0px 18px;
+.profitable__wrap {
 margin: 0 auto;
-position: relative;
 @include pad {
-    padding: 30px 0 75px;
     }
     .profitable{
+        padding: 30px 0px 0px;
+        position: relative;
+        @include pad {
+            padding: 0 0 56px;
+        }
         .profitable_list{
-            display: flex;
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            @include pad {
+                width: 100%;
+                z-index: 3;
+                display: grid;
+                grid-template-columns: 256px 256px 256px;
+                grid-row-gap: 14px;
+                grid-column-gap: 20px;
+            }
             .profitable_item {
+                z-index: 3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
                 background-color: $bg-grey;
-                max-width: 200px;
-                height: 500px;
+                max-width: 380px;
+                padding: 19px 28px;
+                margin-bottom: 22px;
+                @include pad {
+                    max-width: 256px;
+                    padding: 30px 28px;
+                }
             }
         }
     }
 }
+
+.profitable_subtitle {
+    margin: 28px 0 46px;
+}
+
+ .profitable_img {
+     display: none;
+    //  z-index: 1;
+     @include pad {
+         display: block;
+     }
+     img {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+     }
+ }

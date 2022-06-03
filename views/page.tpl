@@ -70,6 +70,15 @@
             src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
             url('/fonts/Montserrat-Medium.woff') format('woff');
         }
+
+        @font-face {
+            font-family: 'Gilroy';
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+            src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+            url('/fonts/Gilroy-Regular.woff') format('woff');
+        }
     </style>
 
     {$common_styles}

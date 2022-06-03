@@ -1,6 +1,6 @@
 .title {
     font-family: $font-main;
-    font-size: $text-large-medium;
+    font-size: $text-huge-medium;
     font-weight: 700;
     line-height: 125%;
     @include pad {
@@ -30,7 +30,7 @@
 .sup-title {
     font-family: $font-main;
     font-size: $text-medium-small;
-    font-weight: 500;
+    font-weight: 700;
 }
 .text {
     font-family: $font-main;
@@ -43,8 +43,19 @@
 .text-small {
     font-family: $font-main;
     font-size: $text-tiny;
-    color: $color-main2;
+    font-weight: 700;
+    color: $color-textGreen;
     margin-bottom: 4px;
+}
+
+.text-small-red {
+    color: $color-textRed;
+    font-size: 16px;
+}
+
+.text-small-green {
+    color: $color-textGreen;
+    font-size: 16px;
 }
 
 

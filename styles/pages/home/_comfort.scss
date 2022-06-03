@@ -1,7 +1,7 @@
 .comfort__wrap {
-    padding: 50px 0 60px;
+    padding: 50px 0 50px;
     @include pad {
-        padding: 80px 0 74px;
+        padding: 55px 0 94px;
     }
     .comfort {
         max-width: fit-content;
@@ -31,11 +31,8 @@
                         flex-direction: row;
                     }
                     img {
-                        width: 200px;
-                        height: 200px;
+                        display: block;
                         @include pad {
-                            height: 164px;
-                            width: 164px;
                             margin-right: 30px;
                         }
                     }
@@ -45,8 +42,38 @@
     }
 }
 
+.comfort_cardMob {
+    display: flex;
+    align-items: flex-end;
+}
+
 .comfort__suptitle {
     font-size: 18px;
     line-height: 140%;
     margin-top: 10px;
+}
+
+.comfort_textWrap {
+    margin-left: 30px;
+    .sup-title {
+        margin-left: 20px;
+        @include pad {
+            margin-left: 0;
+        }
+    }
+}
+
+.img-desc {
+    display: none;
+    @include pad {
+        display: block;
+    }
+}
+
+.img-mob {
+    min-width: 170px;
+    display: block;
+    @include pad {
+        display: none;
+    }
 }
