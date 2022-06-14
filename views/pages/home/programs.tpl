@@ -76,6 +76,6 @@
                 </picture>
             </div>
         </div>
-        <img class="programs_logo" src="img/images/programm/1c.png">
+        <img class="programs_logo">
     </div>
  </section>

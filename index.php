@@ -23,45 +23,6 @@
         header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
     }
 
-    // Получаем квартиры
-    $house_filter = new HouseFilter();
-    $house_filter->house = House::get_by_id("aurora");
-
-    $flat_filter_1kom = new FlatFilter();
-    $flat_filter_1kom->rooms = "1";
-
-    $flat_filter_2kom = new FlatFilter();
-    $flat_filter_2kom->rooms = "2";
-
-    $flat_filter_3kom = new FlatFilter();
-    $flat_filter_3kom->rooms = "3";
-
-    $flats = [
-        "1" => HouseFlatGrouped::get_all([$house_filter, $flat_filter_1kom]),
-        "2" => HouseFlatGrouped::get_all([$house_filter, $flat_filter_2kom]),
-        "3" => HouseFlatGrouped::get_all([$house_filter, $flat_filter_3kom])
-    ];
-
-    $liters = [
-        ["plan" => "/img/liters/litA_1", "letter" => "А", "liter" => 1,],
-        ["plan" => "/img/liters/litA_2", "letter" => "А", "liter" => 2,],
-        ["plan" => "/img/liters/litA_3", "letter" => "А", "liter" => 3,],
-        ["plan" => "/img/liters/litB_4", "letter" => "Б", "liter" => 4,],
-        ["plan" => "/img/liters/litV_5", "letter" => "В", "liter" => 5,],
-        ["plan" => "/img/liters/litV_6", "letter" => "В", "liter" => 6,]
-    ];
-
-    $objects = [
-        ["src" => "/img/objects/objects-01", "name" => "ЖК «На Адмирала Пустошкина»"],
-        ["src" => "/img/objects/objects-02", "name" => "ЖК «Молодежный»"],
-        ["src" => "/img/objects/objects-03", "name" => "ЖК «Южный-2»"],
-        ["src" => "/img/objects/objects-04", "name" => "ЖК «Горизонт»"],
-        ["src" => "/img/objects/objects-05", "name" => "ЖК «Южный»"],
-        ["src" => "/img/objects/objects-06", "name" => "ЖК «Уютный»"],
-        ["src" => "/img/objects/objects-07", "name" => "ЖК «На Владимерской»"],
-        ["src" => "/img/objects/objects-08", "name" => "ЖК «Радонеж»"]
-    ];
-
     // Инициализируем шаблонизатор
     $smarty = init_smarty();
 

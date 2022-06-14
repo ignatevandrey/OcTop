@@ -1,5 +1,5 @@
 import { scrollToBlock } from "../common/helpers";
-console.log("dsjdklsaklsa");
+
 $(document).ready(function () {
     // Бургер
     $('.header__menuBurger').on('click', () => {
@@ -30,30 +30,7 @@ $(document).ready(function () {
         myMap.geoObjects.add(myPlacemark);
     });
     // Аккордион
-    $('.budget__list-accordion img').css('transform','rotate('+360+'deg)');
-    $.fn.accordion = function(itemClass, picClass) {
-        let some = itemClass + ' ';
-        let itemBlock = some + '.budget__list-hidden';
-        $(itemBlock).toggleClass('active');
-        $(itemBlock + '.active').slideToggle().css('display','flex');
-        if ($(itemBlock).hasClass('active')) {
-            $(some + '.accordion__link-open').html("Скрыть");
-            $(some + '.budget__list-accordion img').css('transform','rotate('+180+'deg)');
-        } else {
-            $(some + '.accordion__link-open').html("Смотреть все");
-            $(some + '.budget__list-accordion img').css('transform','rotate('+0+'deg)');
-            $(itemBlock).slideUp();
-        }
-        $(some + picClass).before($(some + '.budget__list-accordion'));
-    };
-    $('.budget__item-white .budget__list-accordion').on('click', (e) => {
-        e.preventDefault();
-        $.fn.accordion('.budget__item-white','.budget__image-white');
-    });
-    $('.budget__item-blue .budget__list-accordion').on('click', (e) => {
-        e.preventDefault();
-        $.fn.accordion('.budget__item-blue','.budget__image-blue');
-    });
+
     /* ----------- Переключение табов в блоке НАШИ ОБЪЕКТЫ (objects) ----------*/
     // $(".objects__tab-nav-item-1").on("click", () => {
     //     if (!$(".objects__block").hasClass("active-tab-1")) {

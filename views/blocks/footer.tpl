@@ -3,9 +3,6 @@
         <div class="footer__content">
             <div class="footer__item footer__item-contact">
                 <h1 class="footer__title title">Контакты</h1>
-                <div class="footer__logo">
-                    <img src="/img/svg/logo_desc" alt="icon-logo">
-                </div>
                 <p class="footer__text">г. Краснодар, ул. Гаврилова, 12 (Центр)</p>
                 <div class="footer__contact">
                     <a href="{$phone->link}" class="footer__phone">
@@ -22,6 +19,12 @@
             <div class="footer__item footer__item-map">
                 <div class="map" id="YMapsID" style="width: 100%; height: 100%;"></div>
             </div>  
+        </div>
+        <div class="footer__logo">
+            <picture>
+                <source media="(max-width: 900px)" srcset="/img/svg/logo_footer-mob.svg">
+                <img class="footer__logo" src="/img/svg/logo_footer-desc.svg" alt="icon-logo">
+            </picture>    
         </div>
     </div>
 </footer>
