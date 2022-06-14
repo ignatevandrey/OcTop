@@ -1,4 +1,4 @@
-<section class="budget">
+<section id="budget" class="budget">
     <div class="container">
         <h2 class="title title__budget">Сомневаетесь? Сравните бюджеты</h2>
         <div class="budget__itemWrap">
@@ -183,6 +183,6 @@
                 </picture>
             </div>
         </div>
-        <div id="consalt" class="btn btn__budget btn_shadow" data-h="Оставьте заявку и получите консультацию от нашего специалиста бесплатно">Получить консультацию</div>
+        <div id="consalt" class="btn btn__budget btn_shadow" data-modal="request" data-h="Оставьте заявку и получите консультацию от нашего специалиста бесплатно">Получить консультацию</div>
     </div>
 </section>

@@ -70,14 +70,6 @@
             src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
             url('/fonts/Montserrat-Medium.woff') format('woff');
         }
-        @font-face {
-            font-family: 'Montserrat';
-            font-weight: 700;
-            font-style: normal;
-            font-display: swap;
-            src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-            url('/fonts/Montserrat-ExtraBold.woff') format('woff');
-        }
 
         @font-face {
             font-family: 'Gilroy';
@@ -118,11 +110,6 @@
                     "telephone": "{$phone->title}"
                 }
             }
-    </script>
-
-    <script>
-        var liters = {json_encode($liters)};
-        var objects = {json_encode($objects)};
     </script>
 
     {$inline_scripts}
@@ -171,5 +158,6 @@
 {/if}
 
 <script src="https://api-maps.yandex.ru/2.1/?apikey={$smarty.env.YMAPS_KEY}&lang=ru_RU&onload=initMap" async></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 </body>
 </html>

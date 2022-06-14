@@ -23,17 +23,5 @@
                 </button>
             </form>
         </div>
-        <!-- <div class="mod-request__img">
-            <picture>
-                <source srcset="/img/modal/request.webp" type="image/webp" />
-                <img class="image cover"
-                    src="/img/modal/request.jpg"
-                    alt="Оставить заявку"
-                    width="274"
-                    height="516"
-                    loading="lazy"
-                    decoding="async" />
-            </picture>
-        </div> -->
     </div>
 {/block}

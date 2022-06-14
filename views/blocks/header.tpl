@@ -38,14 +38,31 @@
                 </div>
                 <div class="header__menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__item-link" href="#">Преимущества</a></li>
-                        <li class="menu__item"><a class="menu__item-link" href="#">Сравнить</a></li>
-                        <li class="menu__item"><a class="menu__item-link" href="#">Программы</a></li>
-                        <li class="menu__item"><a class="menu__item-link" href="#">Тарифы</a></li>
-                        <li class="menu__item"><a class="menu__item-link" href="#">О нас</a></li>
-                        <li class="menu__item"><a class="menu__item-link" href="#">Контакты</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#profitable">Преимущества</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#budget">Сравнить</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#programms">Программы</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#footer">Тарифы</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#footer">О нас</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#footer">Контакты</a></li>
                     </ul>
                 </div>
+                    <div class="header__grey-mob">
+                        <div class="header__greyItem">
+                            <a>1C</a>
+                        </div>
+                        <div class="header__greyItem">
+                            <a>ОНЛАЙН КЛАССЫ</a>
+                        </div>
+                        <div class="header__greyItem">
+                            <a>АВТОМАТИЗАЦИЯ БИЗНЕСА</a>
+                        </div>
+                        <div class="header__greyItem">
+                            <a>1C ОБЛАКО</a>
+                        </div>
+                        <div class="header__greyItem">
+                            <a>IT ОБСЛУЖИВАНИЕ</a>
+                        </div>
+                    </div>
                 <div class="header__menuClose">
                     <img src="../../img/svg/icon-close.svg" alt="icon-close">
                 </div>

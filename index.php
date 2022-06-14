@@ -37,8 +37,6 @@
         "vendor_styles" => external_styles(actual_bundle_path("dist/css/prod", "vendor")),
         "common_styles" => styles_by_mode("common"),
         "flats" => $flats,
-        "liters" => $liters,
-        "objects" => $objects,
         "referer" => [
             "utm_campaign" => $utm_campaign,
             "utm_source" => $utm_source,

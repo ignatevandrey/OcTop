@@ -1,4 +1,4 @@
-<section class="profitable__wrap">
+<section id="profitable" class="profitable__wrap">
     <div class="container">
     <h2 class="title">Облачное решение 1С выгодно и удобно </h2>
     <p class="profitable_subtitle">Кратко ответим на вопрос “Почему стоит выбрать 1С в облаке?”</p>

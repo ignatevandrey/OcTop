@@ -57,32 +57,32 @@ $(document).ready(function() {
         }
     });
 
-    $(".request__link-privacy").click(function(event) {
-        event.preventDefault();
-    });
-        //Модалки
-    $('#bonus').click(function(){
-        $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
-    });
-    $('#consalt').click(function(){
+    // $(".request__link-privacy").click(function(event) {
+    //     event.preventDefault();
+    // });
+     //   Модалки
+    // $('#bonus').click(function(){
+    //     $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
+    // });
+    $('#consalt').on(click,function(){
         $(".intopModal-request").arcticmodal(arcticmodal_settings);
         $('.modal-title').html($('#consalt').attr('data-h'));
     });
-    $('#program').click(function(){
-        $('.modal-title').html($('#program').attr('data-h'));
-        $(".intopModal-request").arcticmodal(arcticmodal_settings);
-    });
-    $('#bonus2').click(function(){
-        $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
-    });
-    $('#bonus3').click(function(){
-        $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
-    });
-    $('#recall').click(function(){
-        $(".intopModal-request").arcticmodal(arcticmodal_settings);
-        $('.modal-title').html($('#recall').attr('data-h'));
-    });
-    $(".request__link-privacy").click(function (event) {
-        event.preventDefault();
-    });
+    // $('#program').click(function(){
+    //     $('.modal-title').html($('#program').attr('data-h'));
+    //     $(".intopModal-request").arcticmodal(arcticmodal_settings);
+    // });
+    // $('#bonus2').click(function(){
+    //     $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
+    // });
+    // $('#bonus3').click(function(){
+    //     $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
+    // });
+    // $('#recall').click(function(){
+    //     $(".intopModal-request").arcticmodal(arcticmodal_settings);
+    //     $('.modal-title').html($('#recall').attr('data-h'));
+    // });
+    // $(".request__link-privacy").click(function (event) {
+    //     event.preventDefault();
+    // });
 });

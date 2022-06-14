@@ -1,22 +1,22 @@
-import { scrollToBlock } from "../common/helpers";
+// import { scrollToBlock } from "../common/helpers";
 
-$(document).ready(function () {
+// $(document).ready(function () {
     // Бургер
-    $('.header__menuBurger').on('click', () => {
-        $('.header__content').addClass('animate');
-        $('body').css('overflow', 'hidden');
-    })
-    $('.header__menuClose').on('click', () => {
-        $('.header__content').removeClass('animate');
-        $('body').css('overflow', 'visible');
-    })
-    $(document).mouseup(function (e){
-        var div = $('.header__content');
-        if (!div.is(e.target) && div.has(e.target).length === 0){
-            $('.header__content').removeClass('animate');
-            $('body').css('overflow', 'visible');
-        }
-    });
+//     $('.header__menuBurger').on('click', () => {
+//         $('.header__content').addClass('animate');
+//         $('body').css('overflow', 'hidden');
+//     })
+//     $('.header__menuClose').on('click', () => {
+//         $('.header__content').removeClass('animate');
+//         $('body').css('overflow', 'visible');
+//     })
+//     $(document).mouseup(function (e){
+//         var div = $('.header__content');
+//         if (!div.is(e.target) && div.has(e.target).length === 0){
+//             $('.header__content').removeClass('animate');
+//             $('body').css('overflow', 'visible');
+//         }
+//     });
     // Яндекс карта
     ymaps.ready(function () { 
         var myMap = new ymaps.Map("YMapsID", {
@@ -48,4 +48,4 @@ $(document).ready(function () {
     //         $(".search-reset").data("type", "arenda");
     //     }
     // });
-});
+// });
