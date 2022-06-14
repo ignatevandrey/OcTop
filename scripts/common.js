@@ -4,3 +4,4 @@ import "./common/modal";
 import "./common/menu";
 import "./common/request";
 import "./common/map";
+import "./common/pages/home";

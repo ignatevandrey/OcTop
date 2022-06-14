@@ -42,7 +42,7 @@
                     <input class="request__checkbox request__checkbox-privacy" type="checkbox" checked>
                     <span class="request__agreement">Даю <span class="request__link request__link-privacy" data-modal="privacy">согласие на обработку персональных данных</span></span>
                     </label>
-                    <button id="bonus" class="btn btn-default" type="button">
+                    <button data-modal="thanks" class="btn btn-default btn_hoverInd" type="button">
                         <span class="btn__text">Получить бонусы</span>
                     </button>
                 </form>

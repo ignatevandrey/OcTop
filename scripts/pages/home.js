@@ -1,5 +1,5 @@
-// import { scrollToBlock } from "../common/helpers";
-
+import { scrollToBlock } from "../common/helpers";
+console.log("dsjdklsaklsa");
 $(document).ready(function () {
     // Бургер
     $('.header__menuBurger').on('click', () => {

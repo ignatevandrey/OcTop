@@ -25,6 +25,14 @@
 .btn:hover {
     background-color: $btn-hover;
 }
+
+.btn_hoverInd {
+
+}
+
+.btn_hoverInd:hover {
+    background-color: $bg-grey;
+}
 .btn:active {
     background-color: $btn-ative;
 }

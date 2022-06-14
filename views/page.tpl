@@ -70,6 +70,14 @@
             src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
             url('/fonts/Montserrat-Medium.woff') format('woff');
         }
+        @font-face {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+            src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+            url('/fonts/Montserrat-ExtraBold.woff') format('woff');
+        }
 
         @font-face {
             font-family: 'Gilroy';

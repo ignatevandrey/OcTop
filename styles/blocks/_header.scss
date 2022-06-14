@@ -55,6 +55,10 @@
     text-align: center;
     font-weight: 500;
     padding: 10px 0;
+    span {
+        font-family: "Monserrat";
+        font-weight: 600;
+    }
     svg{
         vertical-align: top;
         fill: $color-white;
@@ -121,215 +125,31 @@
     }
 }
 
+.header__grey {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Montserrat";
+    background-color: #000000;
+    display: flex;
+    .header__greyItem {
+        background-color: $bg-grey5;
+        padding: 12px 0 10px;
+        color: $color-textGrey;
+        width: 100%;
+        text-align: center;
+        margin-right: 2px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            background-color: $color-main1;
+            color: $color-white;
+        }
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .header-logo {
-//     display: inline-block;
-// }
-// .header-logo img {
-//     width: 102px;
-//     height: 39px;
-//     @include desktop-mini {
-//         width: 115px;
-//         height: 43px;
-//     }
-// }
-// .header__content {
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-//     flex: auto;
-// }
-// .header__phone {
-//     display: flex;
-//     align-items: center;
-//     width: 45px;
-//     margin-left: 8.5%;
-//     margin-right: 50px;
-//     font-weight: 600;
-//     font-size: 0;
-//     letter-spacing: .01em;
-//     color: $color-white;
-//     cursor: pointer;
-//     transition: all .3s ease;
-//     @include desktop-mini {
-//         width: auto;
-//         margin-right: 0;
-//         font-size: $text-medium-mini;
-//         color: initial;
-//     }
-// }
-// .header__phone svg {
-//     width: 25px;
-//     height: 25px;
-//     margin-right: 20px;
-//     fill: $color-text;
-//     transition: all .3s ease;
-//     @include desktop-mini {
-//         width: 18px;
-//         height: 18px;
-//         margin-right: 10px;
-//     }
-// }
-// .header__phone:hover svg {
-//     fill: $color-bg3;
-// }
-// .header__phone:hover {
-//     color: $color-bg3;
-// }
-// .header__menu {
-//     position: absolute;
-//     top: 60px;
-//     right: -450px;
-//     width: 420px;
-//     padding: 40px 16px 140px;
-//     background: $color-white;
-//     transition: all .3s ease;
-//     @include desktop-mini {
-//         position: static;
-//         display: block;
-//         right: auto;
-//         width: auto;
-//         padding: 0;
-//         background: transparent;
-//     }
-// }
-// .header__menu .menu__list {
-//     display: flex;
-//     flex-direction: column;
-//     @include desktop-mini {
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//     }
-// }
-// .header__menu .menu__item {
-//     padding: 20px 0;
-//     font-size: $text-medium-mini;
-//     text-transform: uppercase;
-//     border-bottom: 1px solid $color-bg2;
-//     cursor: pointer;
-//     @include desktop-mini {
-//         padding: 0;
-//         text-transform: none;
-//         border-bottom: none;
-//     }
-// }
-// .header__menu .menu__item + .menu__item {
-//     margin-left: 0;
-//     @include desktop-mini {
-//         margin-left: 25px;
-//     }
-// }
-// .menu__item-link {
-//     display: block;
-//     text-align: left;
-//     transition: all .3s ease;
-// }
-// .header__menu .menu__item:hover .menu__item-link {
-//     color: $color-main1;
-// }
-// .header__menu .menu-icon {
-//     position: relative;
-//     padding-right: 21px;
-//     pointer-events: none;
-// }
-// .menu-icon {
-//     display: block;
-//     @include desktop-mini {
-//         display: initial;
-//     }
-// }
-// .header__menu .menu-icon::before {
-//     position: absolute;
-//     content: '';
-//     top: 8px;
-//     right: 0;
-//     width: 17px;
-//     height: 10px;
-//     background: url(/img/svg/icon-arrow-down.svg) 50% / cover no-repeat;
-//     transform: rotate(-90deg);
-//     @include desktop-mini {
-//         width: 11px;
-//         height: 6px;
-//         top: 12px;
-//         transform: rotate(0);
-//     }
-// }
-// .header__menu .menu-icon::before {
-//     position: absolute;
-//     content: '';
-//     top: 8px;
-//     right: 0;
-//     width: 17px;
-//     height: 10px;
-//     background: url(/img/svg/icon-arrow-down.svg) 50% / cover no-repeat;
-//     transform: rotate(-90deg);
-//     @include desktop-mini {
-//         width: 11px;
-//         height: 6px;
-//         top: 12px;
-//         transform: rotate(0);
-//     }
-// }
-// .header__btn-menu {
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 60px;
-//     height: 100%;
-//     background: $color-main2;
-//     cursor: pointer;
-//     @include desktop-mini {
-//         display: none;
-//     }
-// }
-// .header__btn-menu-img {
-//     width: 20px;
-//     height: 14px;
-//     background: url(/img/svg/icon-menu-btn.svg) center / cover no-repeat;
-//     cursor: pointer;
-//     pointer-events: none;
-// }
-// .open__btn .header__btn-menu-img {
-//     width: 16px;
-//     height: 16px;
-//     background: url(/img/svg/icon-close-menu-btn.svg) center / cover no-repeat;
-//     cursor: pointer;
-//     pointer-events: none;
-// }
+.phone__mob {
+    @include pad {
+        display: none;
+    }
+}
