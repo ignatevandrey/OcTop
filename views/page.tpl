@@ -150,14 +150,16 @@
     {include "modal/request.tpl"}
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script
 {$vendor_scripts}
 {$common_scripts}
+
 
 {if !empty($page->scripts)}
     {$page->scripts}
 {/if}
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=initMap" async></script>
 
-<script src="https://api-maps.yandex.ru/2.1/?apikey={$smarty.env.YMAPS_KEY}&lang=ru_RU&onload=initMap" async></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 </body>
 </html>

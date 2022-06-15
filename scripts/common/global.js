@@ -15,8 +15,6 @@ export function windowWidth() {
 // форматирует разрядность числа
 document.querySelectorAll(".capacity").forEach(el => el.innerHTML = el.textContent.replace(/(\d)(?=(\d{3})+$)/g, '$1 '));
 
-
-
 jQuery(($) => {
         $("input[name='phone']").mask("+7(999)999-99-99");
     });

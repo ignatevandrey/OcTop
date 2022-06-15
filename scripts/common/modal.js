@@ -11,7 +11,7 @@ export let arcticmodal_settings = {
     }
 };
 
-$(document).ready(function() {
+$(function() {
     window.alert = function(content) {
         $(".intopModal-alert .modal__inner").html(content).parents(".intopModal-alert").arcticmodal(arcticmodal_settings);
     }

@@ -64,7 +64,7 @@ $(document).ready(function() {
     // $('#bonus').click(function(){
     //     $(".intopModal-thanks").arcticmodal(arcticmodal_settings);
     // });
-    $('#consalt').on(click,function(){
+    $('#consalt').on("click", function(){
         $(".intopModal-request").arcticmodal(arcticmodal_settings);
         $('.modal-title').html($('#consalt').attr('data-h'));
     });
