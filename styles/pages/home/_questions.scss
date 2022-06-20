@@ -1,0 +1,99 @@
+.questions__wrap {
+    position: relative;
+    background-color: $color-main1;
+    .questions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 28px;
+        padding-bottom: 28px;
+        @include pad {
+            position: relative;
+            padding-top: 38px;
+            padding-bottom: 28px;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .questions__textWrap {
+            margin: 0 auto;
+            // margin-left: 0px;
+            @include pad {
+                margin: 0;
+                // margin-left: 30px;
+            }
+            .questions-title {
+                font-size: $text-huge-medium;
+                line-height: 125%;
+                margin: 0px 0 15px;
+                @include pad {
+                    
+                    margin: 0 20px;
+                }
+            }
+            .questions-suptitle {
+                font-size: $text-medium-mini;
+                line-height: 130%;
+                margin: 0px 0 15px;
+                @include pad {
+                    font-size: $text-medium-small;
+                    margin: 0px 0 10px;
+                }
+                a {
+                    color: $color-main2;
+                }
+            }
+        }
+        .questions-modal__inner {
+            margin: 0 auto;
+            display: block;
+            max-width: 380px;
+            @include pad {
+                margin: 0;
+                min-width: 420px;
+
+            }
+        }
+    }
+}
+
+.questions-title {
+    color: $color-white;
+}
+
+.questions_card {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: $bg-grey;
+    border-radius: 16px;
+    padding: 24px 20px;
+    margin-bottom: 50px;
+    @include pad {
+        position: absolute;
+        bottom: -60px;
+        margin: 0;
+        // transform: translateY(60px);
+    }
+}
+
+.questions_img {
+    display: block;
+    position: absolute;
+    top: -76%;
+    right: -52px;
+    @include pad {
+        right: -46px;
+        top: -26px;
+    }
+}
+
+.request__checkbox:checked + .request__agreementQuestions::before {
+    background-color: #969696;
+}
+
+.brMob {
+    display: block;
+    @include pad {
+        display: none;
+    }
+}

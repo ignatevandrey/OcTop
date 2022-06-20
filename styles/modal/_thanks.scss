@@ -1,0 +1,73 @@
+.intopModal-thanks .intopModal__whiteContent {
+    width: 386px;
+    @include pad {
+        width: 650px;
+    }
+}
+.intopModal-thanks .modal-header {
+    background-color: $color-white;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+    @include pad {
+        height: 60px;
+    }
+}
+.intopModal-thanks .modal-footer {
+    background-color: $color-white;
+    padding: 12px 67px 50px;
+    text-align: center;
+    @include pad {
+        padding: 41px 145px;
+    }
+}
+.thanks-title {
+    font-size: $text-medium-small;
+    font-weight: 500;
+    line-height: 135%;
+    letter-spacing: .01em;
+    margin-bottom: 10px;
+}
+.thanks-text {
+    font-size: $text-medium-mini;
+    margin: 0 auto;
+    max-width: 313px;
+    @include pad {
+        max-width: 360px;
+    }
+}
+.intopModal-thanks .modal-header img {
+    position: absolute;
+    z-index: 1;
+}
+.thanks-check-img {
+    width: 46px;
+    height: 46px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.thanks-confetti-img {
+    width: 120px;
+    height: 120px;
+    @include pad {
+        width: 205px;
+        height: 205px;
+    }
+}
+.confetti-left {
+    top: 82px;
+    left: 19px;
+    @include pad {
+        top: 72px;
+        left: 50px;
+    }
+}
+.confetti-right {
+    top: 23px;
+    right: 21px;
+    @include pad {
+        top: -22px;
+        right: 53px;
+    }
+}

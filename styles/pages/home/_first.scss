@@ -1,0 +1,99 @@
+
+.first {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 16px;
+    @include pad {
+        flex-direction: row;
+        padding: 0px 16px;
+        }
+        .first-title {
+            margin: 0;
+            font-size: 40px;
+            line-height: 40px;
+            @include pad {
+                font-size: 64px;
+                line-height: 64px;
+                margin-top: 32px;
+            }
+            a{
+                color: $color-main2;
+                cursor: pointer;
+            }
+        }
+        .first-suptitle {
+        font-size: $text-medium-maxi;
+        line-height: 28px;
+        margin: 13px 0 28px;
+            @include pad {
+                margin: 38px 0 40px;
+            }
+        }
+        .first-text {
+            margin-left: 10px;
+        }
+}
+.first__text-wrap {
+    display: flex;
+    margin-bottom: 15px;
+    @include pad {
+        margin-bottom: 18px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    img {
+        width: 33px;
+        height: 33px;
+        @include pad {
+            width: 33px;
+            height: 33px;
+            }
+    }
+}
+
+.first__item {
+    z-index: 3;
+}
+
+.first__item-girl {
+    display: none;
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    max-width: 500px;
+    @include pad {
+        display: block;
+        max-width: initial;
+        z-index: 1;
+    }
+}
+.first__item-girl-mob {
+    z-index: 1;
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    max-width: 500px;
+    @include pad {
+        display: none;
+    }
+}
+
+.plug {
+    height: 78px;
+    @include pad {
+        height: 108px;
+    }
+}
+
+.first__logo {
+    position: absolute;
+    bottom: 0;
+    right: 4%;
+    @include pad {
+        display: none;
+    }
+}

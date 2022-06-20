@@ -1,0 +1,61 @@
+.btn {
+    font-size: $text-medium-maxi;
+    line-height: 130%;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    border-radius: 60px;
+    color: $color-white;
+    background: $btn-color;
+    padding: 13px 0px;
+    width: 100%;
+    font-weight: 700;
+    box-shadow: 0 8px 12px $btn-hover;
+}
+
+.btn-default {
+    max-width: 420px;
+    text-transform: uppercase; 
+}
+.btn-default-smoll {
+    max-width: 300px;
+
+}
+.btn-default-verySmoll {
+    max-width: 274px;
+}
+.btn:hover {
+    background-color: $btn-hover;
+}
+
+.btn_hoverInd {
+
+}
+
+.btn_hoverInd:hover {
+    background-color: $bg-grey;
+}
+.btn:active {
+    background-color: $btn-ative;
+}
+.btn__text {
+    font-size: $text-medium-small;
+    line-height: 130%;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    color: $color-white;
+    transition: all .3s ease;
+}
+
+.btn_shadow {
+    box-shadow: 0 8px 12px $btn-hover;
+}
+
+.btn__form {
+    text-transform: uppercase;
+    max-width: 300px;
+}

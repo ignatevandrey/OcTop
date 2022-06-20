@@ -1,0 +1,191 @@
+.programms__wrap {
+    padding: 30px 0px 18px;
+    background-color: $bg-grey;
+    margin: 0 auto;
+    @include pad {
+        padding: 30px 0 75px;
+    }
+    .programms {
+        width: fit-content;
+        @include pad {
+            width: 100%;
+        }
+        position: relative;
+        .programms__item {
+            display: grid;
+            grid-template-columns: 145px 145px 145px;
+            grid-row-gap: 18px;
+            grid-column-gap: 15px;
+            width: fit-content;
+            @include pad {
+                z-index: 3;
+            grid-template-columns: 170px 170px 170px;
+            grid-row-gap: 18px;
+            width: 100%;
+            }
+        }
+        .programms__item-2 {
+            display: grid;
+            grid-template-columns: 145px 145px 145px;
+            grid-row-gap: 20px;
+            grid-column-gap: 15px;
+            @include pad {
+                grid-row-gap: 0;
+                grid-column-gap: 0;
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                width: 50%;
+                z-index: 3;
+            }
+            .programms__card {
+                
+                @include pad {
+                    margin-bottom: 20px;
+                    margin-right: 18px;
+                    width: 170px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                    margin-right: 0;
+                    display: none;
+                    @include pad {
+                        display: flex;
+                    }       
+                }
+            }
+        }
+    }
+}
+
+.programms__card {
+    width: 100%px;
+    height: 84px;
+    background-color: $color-white;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include pad {
+        z-index: 3;
+        max-width: 170px;
+        height: 94px;
+    }
+    p {
+        height: fit-content;
+    }
+}
+
+.programms__title {
+    margin-bottom: 30px;
+}
+
+.program {
+    max-width: 380px;
+    position: relative;
+    border-radius: 16px;
+    background-color: $bg-grey3;
+    padding: 13px 22px 24px 40px;
+    margin: 34px auto 50px;
+    @include pad {
+        height: fit-content;
+        max-height: 228px;
+        padding: 30px 30px 45px;
+        display: block;
+        margin: 0;
+        min-width: 640px;
+    }
+}
+
+.programm_box {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate3d(-40% , -50%, 0);
+}
+
+.programms_title-2 {
+    margin-bottom: 25px;
+    margin-top: 0;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    line-height: 146%;
+}
+
+.free {
+    color: $color-main2;
+    font-weight: 700;
+}
+
+.programms__imgManWrap {
+    display: none;
+    @include pad {
+        display: block;
+    }
+}
+
+
+
+.programms__imgMan {
+    display: none;
+    @include pad {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        right: 56px;
+        top: -52px;
+    }
+}
+
+.programms_logo {
+    display: none;
+    @include pad {
+        display: block;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    }
+}
+
+
+// мобильная версия
+
+.programms__itemMob {
+    @include pad {
+        display: none;
+    }
+}
+
+.programms__formMob {
+    max-width: 292px;
+}
+
+.br {
+    display: block;
+    @include pad {
+        display: none;
+    }
+}
+
+.btn-programms {
+    max-width: 276px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    @include pad {
+        max-width: 410px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+    }
+}
+
+.programms_item-2Wrap {
+    display: flex;
+    flex-direction: column;
+    @include pad {
+        flex-direction: row;
+    }
+}

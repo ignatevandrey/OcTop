@@ -1,0 +1,139 @@
+.started__wrap {
+    padding-top: 34px;
+    padding-bottom: 59px;
+    @include pad {
+        padding-top: 54px;
+        padding-bottom: 74px;
+    }
+    .started {
+        max-width: fit-content;
+        margin:  0 auto;
+        display: flex;
+        flex-direction: column;
+        @include pad {
+            max-width: 100%;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .started__textWrap {
+            display: flex;
+            align-items: end;
+        }
+    }
+}
+
+.started_item {
+    position: relative;
+    border-radius: 16px;
+    background: $color-main1;
+    padding: 25px 25px;
+    margin: 30px 0;
+    max-width: 382px;
+    @include pad {
+        max-width: 572px;
+        height: fit-content;
+        align-self: flex-end;
+        margin: 0 64px 0 0;
+        padding: 25px 50px 25px 25px;
+    }
+}
+
+.started_img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate3d(50%, -50%, 0);
+    display: block;
+}
+
+.started_titleWrap {
+    width: fit-content;
+    margin: 0 auto;
+    @include pad {
+        margin: 0 0 -50px 0;
+    }
+}
+
+.started_title {
+    color: #FFFFFF;
+    margin: 10px 2px;
+}
+
+.started__text {
+    font-weight: 500;
+}
+
+.started__textSell {
+    font-size: 16px;
+    color: $color-white;
+    @include pad {
+            margin-bottom: 0px;
+    }
+}
+
+.started__price {
+    color: $color-white;
+    @include pad {
+    }
+}
+
+.started__sup-title {
+    font-size: $text-medium-mini;
+    font-weight: 500;
+    margin-top: 15px;
+    @include pad {
+        font-size: $text-medium-maxi;
+        margin: 8px 0 26px;
+    }
+}
+
+.started__img {
+    display: none;
+    @include pad {
+        display: block;
+    }
+}
+
+.modal__innerStarted {
+    display: block;
+    max-width: 392px;
+    @include pad {
+        min-width: 420px;
+    }
+}
+
+.request__inputStarted {
+    background: $bg-grey2;
+}
+
+.request__inputStarted::placeholder {
+    color: #969696;
+}
+
+.request__agreementStarted::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: $color-main2;
+}
+
+.request__agreementStarted::after {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 13px;
+    height: 7px;
+    content: '';
+    transition: all .2s ease;
+    transform: rotate(-45deg);
+    opacity: 1;
+    border-bottom: 2px solid $color-white;
+    border-left: 2px solid $color-white;
+}
+
+.request__checkbox:checked + .request__agreementStarted::before {
+    background-color: $checkobx-color;
+}

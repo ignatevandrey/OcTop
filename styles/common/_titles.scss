@@ -1,0 +1,75 @@
+.title {
+    font-family: $font-main;
+    font-size: $text-huge-medium;
+    font-weight: 700;
+    line-height: 47px;
+    max-width: 380px;
+    margin: 0 auto;
+    @include pad {
+    font-size: $text-huge;
+    line-height: 56px;
+    @include pad {
+        max-width: 100%;
+        margin: 0;
+    }
+    }
+}
+.title-2 {
+    color: #FFFFFF;
+    font-family: $font-main;
+    font-size: $text-medium-maxi;
+    font-weight: 500;
+    line-height: 125%;
+    margin: 15px 0 20px;
+    @include pad {
+        font-size: $text-large;
+        margin: 20px 0 44px;
+    }
+}
+.title-3 {
+    font-family: $font-main;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+.sup-title {
+    font-family: $font-main;
+    font-size: $text-medium-small;
+    font-weight: 700;
+}
+.text {
+    font-family: $font-main;
+    font-size: $text-medium-mini;
+    @include pad {
+        font-size: $text-small;
+    }
+}
+
+.text-small {
+    font-family: $font-main;
+    font-size: $text-tiny;
+    font-weight: 700;
+    color: $color-textGreen;
+    margin-bottom: 4px;
+}
+
+.text-small-red {
+    color: $color-textRed;
+    font-size: 16px;
+}
+
+.text-small-green {
+    color: $color-textGreen;
+    font-size: 16px;
+}
+
+
+.suptitle__security {
+    font-family: $font-main;
+    font-size: 18px;
+    line-height: 140%;
+    display: inline-block;
+}
+
+
